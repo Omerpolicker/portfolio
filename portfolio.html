@@ -1,0 +1,2411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ╔═══════════════════════════════╗ -->
+  <!-- ║   SEO · Performance · Social   ║ -->
+  <!-- ╚═══════════════════════════════╝ -->
+
+  <!-- Core SEO -->
+  <meta name="description" content="Portfolio of Omer Policker — Digital Media Designer &amp; Creative Technologist based in Tel Aviv. Games, interactive documentaries, UX/UI, brand identity, video, and academic writing." />
+  <meta name="author" content="Omer Policker" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0e0b1c" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph (LinkedIn, Facebook, WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Omer Policker — Digital Media Designer &amp; Creative Technologist" />
+  <meta property="og:description" content="Tel Aviv-based Digital Media Designer specialising in games, interactive documentaries, brand identity, video production, and UX/UI design." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Omer Policker Portfolio" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Omer Policker — Digital Media Designer" />
+  <meta name="twitter:description" content="Tel Aviv-based Digital Media Designer: games, interactive docs, brand identity, video, UX/UI." />
+
+  <!-- Font Performance: preconnect before the stylesheet link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#omer-policker",
+        "name": "Omer Policker",
+        "jobTitle": "About Me",
+        "description": "MFA student in Digital Media at Tel Aviv University, specialising in interactive design, UX/UI, games, brand identity, video production, and academic writing.",
+        "email": "omerpolicker@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/omer-policker-3218291b6/",
+          "https://omerpolicker.itch.io"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Tel Aviv University"
+        },
+        "knowsAbout": [
+          "UX Design","UI Design","Game Design","Brand Identity",
+          "Motion Graphics","Interactive Media","Video Production","Digital Marketing"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Omer Policker Portfolio",
+        "description": "Portfolio of Omer Policker — Digital Media Designer & Creative Technologist",
+        "author": { "@id": "#omer-policker" }
+      },
+      {
+        "@type": "VideoGame",
+        "name": "GANGANG",
+        "author": { "@id": "#omer-policker" },
+        "description": "2D action game where the player disguises their character to arrest gangsters and save the town. Winner of the 2025 Tel Aviv University Game Jam.",
+        "dateCreated": "2025",
+        "award": "1st Place — TAU Game Jam 2025",
+        "url": "https://www.youtube.com/watch?v=rqEtecTcLuQ"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Melancholy Pocket",
+        "author": { "@id": "#omer-policker" },
+        "description": "Interactive documentary preserving the memory of the old Israeli Broadcast Television building in Jerusalem through an immersive web interface.",
+        "dateCreated": "2024",
+        "genre": "Interactive Documentary",
+        "url": "https://otgomie.wixsite.com/melancholypocket"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "King Midas",
+        "author": { "@id": "#omer-policker" },
+        "description": "Interactive story-based video game built with RenPy, following the myth of King Midas and the golden touch. Included in TAU Digital Media BA curriculum.",
+        "dateCreated": "2023",
+        "url": "https://omerpolicker.itch.io/midas"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Begin to Grow",
+        "author": { "@id": "#omer-policker" },
+        "description": "Figma UX prototype for a plant care app designed for beginner plant owners, featuring personalised care routines and contextual guidance.",
+        "dateCreated": "2024",
+        "genre": "UX Design — Mobile App Prototype"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "JHMedical — Brand Identity & Website",
+        "author": { "@id": "#omer-policker" },
+        "description": "Full brand identity, website design and build, LinkedIn strategy, and marketing materials for JHMedical, a medical B2B company.",
+        "dateCreated": "2024",
+        "genre": "Brand Identity & Web Design"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "English Coach — Marketing & Growth",
+        "author": { "@id": "#omer-policker" },
+        "description": "Led marketing strategy for English Coach, achieving 2,500% Instagram growth and 40% LinkedIn follower growth in eight months.",
+        "dateCreated": "2024",
+        "genre": "Digital Marketing"
+      }
+    ]
+  }
+  </script>
+
+  <title>Omer Policker — Digital Media Designer &amp; Creative Technologist | Tel Aviv</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      /* ── Neutrals ── */
+      --bg:       #EDE9FF;          /* soft lavender background */
+      --surface:  #FFFFFF;          /* card / panel surface */
+      --ink:      #1E1633;          /* primary text (dark purple-black) */
+      --mid:      #6B6490;          /* muted text */
+      --faint:    #9B97B8;          /* very muted text */
+
+      /* ── Borders ── */
+      --line:     #D5D0EE;          /* light purple border */
+
+      /* ── Component backgrounds ── */
+      --pill:     rgba(109,76,255,0.09);   /* pill tint */
+      --card:     #FFFFFF;          /* card background */
+      --grid-c:   rgba(109,76,255,0.06);
+
+      /* ── Purple — structure / navigation / CTA ── */
+      --purple:   #6D4CFF;
+      --purple-h: #5A3EE6;
+
+      /* ── Yellow — sparingly: badges, hover highlights, emphasis ── */
+      --yellow:   #FFD84D;
+      --yellow-h: #E6C243;
+
+      /* backward-compat alias */
+      --accent:   #6D4CFF;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s ease, transform .75s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .rd1 { transition-delay: .12s; } .rd2 { transition-delay: .24s; } .rd3 { transition-delay: .38s; }
+
+    /* WORK HOVER PREVIEW */
+    #work-preview {
+      position: fixed;
+      top: 0; left: 0;
+      width: 320px;
+      pointer-events: none;
+      z-index: 600;
+      opacity: 0;
+      transition: opacity .22s ease;
+    }
+    #work-preview.visible {
+      opacity: 1;
+    }
+    #work-preview img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 24px 64px rgba(109,76,255,.14), 0 4px 12px rgba(109,76,255,.09);
+    }
+
+    /* LIGHTBOX */
+    #lightbox { position: fixed; inset: 0; z-index: 8000; background: rgba(6,4,18,.97); backdrop-filter: blur(14px); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .25s; }
+    #lightbox.open { opacity: 1; pointer-events: all; }
+    #lightbox img { max-width: 90vw; max-height: 88vh; object-fit: contain; cursor: zoom-out; }
+    #lb-close { position: absolute; top: 28px; right: 36px; font-size: .6rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.38); background: none; border: none; cursor: pointer; transition: color .15s; }
+    #lb-close:hover { color: #fff; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 500; display: flex; align-items: center; justify-content: space-between; padding: 16px 56px; background: rgba(245,241,255,.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--line); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo-img { height: 36px; width: auto; display: block; }
+    .nav-links { list-style: none; display: flex; gap: 28px; align-items: center; }
+    .nav-links a { font-size: .62rem; letter-spacing: .06em; color: var(--mid); text-decoration: none; transition: color .15s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--purple); }
+    .nav-cv { font-size: .62rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #fff !important; background: var(--purple); padding: 7px 16px; border-radius: 40px; text-decoration: none; transition: background .18s; }
+    .nav-cv:hover { background: var(--purple-h); }
+
+    /* HERO */
+    #home { min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 110px 56px 72px; border-bottom: 2px solid var(--line); }
+    .hero-eye { display: none; }
+    .hero-name { font-size: clamp(2.8rem, 6.5vw, 9rem); font-weight: 900; line-height: .92; letter-spacing: .01em; white-space: nowrap; }
+    .hero-name em { font-style: italic; font-weight: 300; color: var(--mid); }
+    .hero-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; padding-top: 28px; margin-top: 28px; border-top: 1px solid var(--line); }
+    .hero-left { display: flex; flex-direction: column; gap: 16px; }
+    .hero-title { font-size: clamp(1rem, 1.6vw, 1.3rem); font-weight: 400; color: var(--ink); letter-spacing: -.02em; }
+    .hero-desc { font-size: .92rem; font-weight: 300; line-height: 1.82; color: var(--mid); max-width: 480px; }
+    .hero-ctas { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+    .hero-cta-fill { font-size: .68rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--purple); padding: 12px 26px; border-radius: 40px; text-decoration: none; transition: background .18s; }
+    .hero-cta-fill:hover { background: var(--purple-h); }
+    .hero-cta { font-size: .68rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); border: 1.5px solid var(--ink); padding: 12px 26px; border-radius: 40px; text-decoration: none; transition: background .15s, color .15s; }
+    .hero-cta:hover { background: var(--purple); color: #fff; border-color: var(--purple); }
+    .hero-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 24px; }
+    .badge-row { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+    .badge { font-size: .72rem; font-weight: 700; color: var(--ink); background: var(--pill); border: 1.5px solid var(--line); padding: 6px 14px; border-radius: 20px; }
+    .hero-scroll { font-size: .56rem; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); }
+
+    /* HERO NAME INTERACTIVE LETTERS */
+    .hero-name-wrap { position: relative; text-align: center; }
+    .hero-char {
+      display: inline-block;
+      will-change: transform;
+      cursor: grab;
+    }
+    .hero-char:active { cursor: grabbing; }
+    .hero-name { position: relative; }
+
+
+    /* HERO TOOLS ICONS */
+    .hero-tools { display: flex; flex-wrap: wrap; gap: 18px 20px; align-items: flex-start; }
+    .tool-item { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 48px; }
+    .tool-icon { width: 32px; height: 32px; object-fit: contain; opacity: .68; transition: opacity .2s, transform .2s; display: block; }
+    .tool-item:hover .tool-icon { opacity: 1; transform: translateY(-3px); }
+    .tool-name { font-size: .5rem; letter-spacing: .04em; text-align: center; color: var(--mid); white-space: nowrap; }
+    .tool-icon-badge { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--pill); border-radius: 7px; border: 1px solid var(--line); font-size: .48rem; font-weight: 700; color: var(--ink); text-align: center; transition: transform .2s; }
+    .tool-item:hover .tool-icon-badge { transform: translateY(-3px); }
+
+    /* FILTER ROW */
+    .filter-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+    .filter-label { font-size: .56rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); white-space: nowrap; }
+    .filter-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+    .filter-pill { font-size: .64rem; font-weight: 500; color: var(--mid); background: transparent; border: 1.5px solid var(--line); padding: 6px 16px; border-radius: 40px; cursor: pointer; transition: all .18s; font-family: 'Inter', sans-serif; }
+    .filter-pill:hover { border-color: var(--purple); color: var(--purple); }
+    .filter-pill.active { background: var(--purple); color: #fff; border-color: var(--purple); }
+
+    /* SHARED SECTION SHELL */
+    .sec { padding: 44px 56px; border-bottom: 1px solid var(--line); }
+    .sec-label { font-size: .58rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--purple); margin-bottom: 28px; display: block; }
+
+
+    /* RECENT WORK LIST */
+    .work-list { display: flex; flex-direction: column; margin-top: 8px; }
+    .work-item { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 12px; padding: 22px 0; border-top: 1px solid var(--line); text-decoration: none; color: inherit; transition: opacity .18s; }
+    .work-item:last-child { border-bottom: 1px solid var(--line); }
+    .work-item:hover { opacity: .45; }
+    .wi-num { font-size: .6rem; color: var(--faint); letter-spacing: .12em; }
+    .wi-title { font-size: clamp(1.2rem, 2.2vw, 1.8rem); font-weight: 700; letter-spacing: -.03em; }
+    .wi-role { font-size: .65rem; color: var(--mid); margin-top: 3px; font-weight: 300; }
+    .wi-tag { font-size: .54rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--purple); background: transparent; padding: 0; border-radius: 0; white-space: nowrap; }
+
+    /* SIDE NAV */
+    #side-nav {
+      position: fixed;
+      right: 28px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 400;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-end;
+    }
+    .sn-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--faint);
+      display: block;
+      text-decoration: none;
+      transition: background .25s, transform .25s, width .25s;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .sn-dot::after {
+      content: attr(data-label);
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: .52rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity .2s;
+      pointer-events: none;
+    }
+    .sn-dot:hover::after { opacity: 1; }
+    .sn-dot:hover { background: var(--mid); }
+    .sn-dot.active {
+      background: var(--accent);
+      transform: scale(1.8);
+    }
+    .sn-dot.active::after { opacity: 1; color: var(--accent); }
+
+    /* CHAPTER HEADER — acts as a full section divider */
+    .chapter {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 10vh;
+      padding: 36px 56px 28px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+      margin-top: 0;
+      /* subtle tint to distinguish from content below */
+      background: rgba(109,76,255,0.05);
+    }
+    /* big ghosted section title in background */
+    .chapter::before {
+      content: attr(data-title);
+      position: absolute;
+      bottom: -0.15em;
+      left: 44px;
+      font-size: clamp(3.5rem, 10vw, 10rem);
+      font-weight: 900;
+      letter-spacing: -.06em;
+      line-height: 1;
+      color: rgba(109,76,255,0.10);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+    /* accent top stripe */
+    .chapter::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), transparent 55%);
+    }
+    .ch-header-row { display: flex; align-items: baseline; gap: 18px; position: relative; z-index: 1; }
+    .ch-num { font-size: .58rem; color: var(--yellow); letter-spacing: .18em; text-transform: uppercase; flex-shrink: 0; font-weight: 700; }
+    .ch-title { font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; letter-spacing: -.03em; }
+    .ch-sub { font-size: .75rem; font-weight: 300; color: var(--mid); margin-left: auto; max-width: 320px; text-align: right; line-height: 1.65; }
+    .ch-desc { font-size: .82rem; font-weight: 300; color: var(--mid); max-width: 500px; margin-top: 16px; line-height: 1.7; position: relative; z-index: 1; }
+
+    /* CASE STUDY PROJECT */
+    .project { padding: 44px 56px; border-bottom: 1px solid var(--line); max-width: 1200px; margin: 0 auto; width: 100%; }
+    .project-wrap { border-bottom: 1px solid var(--line); }
+    .project-wrap .project { border-bottom: none; }
+    .proj-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .proj-num { font-size: .6rem; color: var(--faint); letter-spacing: .14em; text-transform: uppercase; }
+    .proj-badge { font-size: .52rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #0E0B16; background: var(--yellow); padding: 3px 10px; border-radius: 20px; }
+    .proj-title { font-size: clamp(1.4rem, 2.2vw, 2rem); font-weight: 700; letter-spacing: -.03em; line-height: 1.1; margin-bottom: 10px; }
+    .proj-title em { font-style: italic; font-weight: 300; color: var(--mid); }
+
+    /* META STRIP */
+    .meta-strip { display: flex; flex-wrap: wrap; border: 1px solid var(--line); overflow: hidden; margin-bottom: 24px; }
+    .meta-cell { padding: 16px 24px; display: flex; flex-direction: column; gap: 5px; border-right: 1px solid var(--line); flex: 1; min-width: 120px; }
+    .meta-cell:last-child { border-right: none; }
+    .mc-label { font-size: .5rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); }
+    .mc-val { font-size: .78rem; font-weight: 300; color: var(--ink); line-height: 1.45; }
+
+    /* COVER */
+    .proj-cover { height: 300px; overflow: hidden; margin-bottom: 24px; background: var(--card); display: flex; align-items: center; justify-content: center; padding: 40px; }
+    .proj-cover img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform .6s ease; }
+    .proj-cover:hover img { transform: scale(1.04); }
+
+    /* OVERVIEW */
+    .proj-overview { font-size: .88rem; font-weight: 300; line-height: 1.7; color: var(--mid); max-width: 680px; margin-bottom: 20px; }
+
+    /* PROCESS */
+    .proc-label { font-size: .52rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--faint); margin-bottom: 16px; }
+    .steps { border: 1px solid var(--line); overflow: hidden; margin-bottom: 28px; }
+    .step { display: grid; grid-template-columns: 60px 1fr; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom: none; }
+    .sn { display: flex; align-items: flex-start; justify-content: center; padding: 14px 0; border-right: 1px solid var(--line); }
+    .sn span { font-size: .52rem; font-weight: 700; letter-spacing: .1em; color: var(--faint); }
+    .sb { padding: 14px 24px; }
+    .st { font-size: .82rem; font-weight: 600; color: var(--ink); letter-spacing: -.01em; margin-bottom: 6px; }
+    .sd { font-size: .78rem; font-weight: 300; line-height: 1.6; color: var(--mid); }
+
+    /* IMAGE BLOCKS */
+    .sh { font-size: .52rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--faint); margin: 20px 0 8px; }
+    .img-block { overflow: hidden; margin-bottom: 3px; background: var(--card); text-align: center; }
+    .img-block img { max-width: 100%; max-height: 440px; height: auto; display: inline-block; transition: opacity .2s; cursor: zoom-in; }
+    .img-block img:hover { opacity: .85; }
+    .img-block.wide img { max-height: 560px; }
+    .img-block.small img { max-height: 300px; }
+    .img-cap { font-size: .6rem; color: var(--faint); margin-bottom: 24px; margin-top: 6px; }
+    .col2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 3px; }
+    .col3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; margin-bottom: 3px; }
+    .col2 .img-block img, .col3 .img-block img { max-height: 340px; }
+
+    /* VIDEO WRAP */
+    .vid-wrap { background: #060410; overflow: hidden; margin-bottom: 3px; }
+    .vid-wrap video { width: 100%; display: block; max-height: 480px; object-fit: contain; }
+
+    /* VIDEO FEATURE (big) */
+    .vid-feature { padding: 0 56px 32px; border-bottom: 1px solid var(--line); }
+    .vid-feature + .vid-feature { border-top: none; padding-top: 0; }
+    .vf-meta { display: flex; align-items: baseline; justify-content: space-between; padding: 20px 0 12px; }
+    .vf-title { font-size: clamp(1.3rem, 2.2vw, 1.9rem); font-weight: 700; letter-spacing: -.03em; line-height: 1; }
+    .vf-sub { font-size: .6rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--purple); }
+    .vf-wrap { background: #060410; overflow: hidden; }
+    .vf-wrap video { width: 100%; display: block; max-height: 72vh; object-fit: contain; }
+    @media (max-width: 860px) {
+      .vid-feature { padding-left: 24px; padding-right: 24px; }
+    }
+
+    /* LOGO PILL */
+    .logo-pill { background: var(--pill); padding: 24px 32px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 28px; }
+    .logo-pill img { max-width: 150px; max-height: 72px; object-fit: contain; display: block; }
+    .client-row { display: flex; align-items: flex-start; gap: 28px; margin-bottom: 12px; }
+    .client-row .logo-pill { flex-shrink: 0; margin-bottom: 0; }
+
+    /* STATS */
+    .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); overflow: hidden; margin-bottom: 24px; }
+    .stat { background: var(--card); padding: 24px 20px; }
+    .stat-n { font-size: 1.7rem; font-weight: 300; letter-spacing: -.04em; color: var(--ink); line-height: 1; margin-bottom: 7px; }
+    .stat-d { font-size: .7rem; font-weight: 300; line-height: 1.65; color: var(--mid); }
+
+    /* PROJECT LINKS */
+    .proj-links { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+    .pl { font-size: .6rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; padding: 10px 20px; border: 1px solid var(--faint); border-radius: 40px; transition: all .15s; }
+    .pl::after { content: '↗'; font-size: .5rem; }
+    .pl:hover { color: var(--purple); border-color: var(--purple); }
+    .pl.fill { background: var(--purple); color: #fff; border-color: var(--purple); }
+    .pl.fill:hover { background: var(--purple-h); border-color: var(--purple-h); }
+
+    /* VIDEO SECTION */
+    .vid-row { display: grid; grid-template-columns: 140px 1fr; gap: 40px; align-items: start; padding: 28px 56px; border-bottom: 1px solid var(--line); max-width: 1200px; margin: 0 auto; width: 100%; }
+    .vid-row:last-child { border-bottom: none; }
+    .vc { display: flex; flex-direction: column; gap: 5px; padding-top: 4px; }
+    .vc-type { font-size: .54rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--mid); }
+    .vc-name { font-size: .85rem; font-weight: 300; color: var(--ink); line-height: 1.3; margin-top: 2px; }
+    .vc-note { font-size: .7rem; color: var(--mid); margin-top: 3px; }
+    .vid-placeholder { background: rgba(109,76,255,0.06); border-radius: 8px; height: 260px; display: flex; align-items: center; justify-content: center; }
+    .vid-placeholder span { font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; color: var(--mid); }
+
+    /* WRITING */
+    .writing-intro { font-size: .88rem; font-weight: 300; line-height: 1.65; color: var(--mid); margin: 16px 0 4px; max-width: 620px; }
+    .w-row { display: flex; align-items: baseline; gap: 22px; padding: 18px 0; border-top: 1px solid var(--line); text-decoration: none; color: inherit; transition: opacity .15s; }
+    .w-row:last-child { border-bottom: 1px solid var(--line); }
+    .w-row:hover { opacity: .5; }
+    .w-n { font-size: .6rem; color: var(--mid); flex-shrink: 0; width: 26px; }
+    .w-t { font-size: .92rem; font-weight: 300; letter-spacing: -.01em; flex: 1; }
+    .w-a { font-size: .7rem; color: var(--mid); flex-shrink: 0; }
+
+    /* CONTACT */
+    #contact { padding: 52px 56px; }
+    .c-big { font-size: clamp(2.8rem, 6.5vw, 7rem); font-weight: 700; letter-spacing: -.04em; line-height: .98; margin-bottom: 18px; }
+    .c-big em { font-style: italic; font-weight: 300; color: var(--mid); }
+    .c-sub { font-size: .88rem; font-weight: 300; line-height: 1.65; color: var(--mid); max-width: 460px; margin-bottom: 28px; }
+    .c-form { display: flex; flex-direction: column; gap: 16px; max-width: 560px; margin-bottom: 40px; }
+    .c-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .c-field { display: flex; flex-direction: column; gap: 6px; }
+    .c-label { font-size: .56rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--mid); }
+    .c-input { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 13px 16px; font-family: 'Inter', sans-serif; font-size: .88rem; font-weight: 300; color: var(--ink); outline: none; transition: border-color .15s; width: 100%; }
+    .c-input::placeholder { color: var(--faint); }
+    .c-input:focus { border-color: var(--ink); }
+    .c-textarea { resize: vertical; min-height: 120px; }
+    .c-submit { align-self: flex-start; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: var(--purple); border: none; padding: 13px 28px; border-radius: 40px; cursor: pointer; transition: background .18s; }
+    .c-submit:hover { background: var(--purple-h); }
+    .c-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .c-link { font-size: .6rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; padding: 10px 20px; border: 1px solid var(--faint); border-radius: 40px; transition: all .15s; }
+    .c-link::after { content: '↗'; font-size: .5rem; }
+    .c-link:hover { color: var(--purple); border-color: var(--purple); }
+
+    /* FOOTER */
+    footer { display: flex; justify-content: space-between; padding: 20px 56px; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); border-top: 1px solid var(--line); }
+    footer a { color: var(--mid); text-decoration: none; transition: color .15s; }
+    footer a:hover { color: var(--ink); }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .stats-row { grid-template-columns: 1fr 1fr; }
+      .col3 { grid-template-columns: 1fr 1fr; }
+      .client-row { flex-direction: column; }
+      .hero-bottom { grid-template-columns: 1fr; }
+      .hero-right { align-items: flex-start; }
+      .badge-row { align-items: flex-start; }
+    }
+    @media (max-width: 860px) {
+      nav, #home, .sec, .chapter, .project, .vid-row, #contact, footer { padding-left: 24px; padding-right: 24px; }
+      .meta-strip { display: none; }
+      .ch-sub { display: none; }
+      .vid-row { grid-template-columns: 1fr; gap: 16px; }
+      .proj-cover { height: 260px; }
+      .sw-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .col2, .col3 { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .hero-scroll { display: none; }
+      .work-item { grid-template-columns: 1fr; }
+      .wi-tag { display: none; }
+      .hero-ctas { flex-direction: column; }
+      .c-form-row { grid-template-columns: 1fr; }
+      .badge-row .badge { font-size: .65rem; }
+    }
+
+    /* ═══════════════════════════════════════
+       PAGE SYSTEM (SPA)
+    ═══════════════════════════════════════ */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* PAGE-LEVEL NAV (replaces main nav on section pages) */
+    .page-nav {
+      position: sticky; top: 0; z-index: 500;
+      display: flex; align-items: center; gap: 20px;
+      padding: 14px 56px;
+      background: rgba(245,241,255,.92); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--line);
+    }
+    .pn-back {
+      font-size: .6rem; font-weight: 500; letter-spacing: .09em;
+      text-transform: uppercase; color: var(--mid);
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; gap: 6px;
+      font-family: 'Inter', sans-serif; transition: color .15s;
+      padding: 0; text-decoration: none; flex-shrink: 0;
+    }
+    .pn-back:hover { color: var(--purple); }
+    .pn-back::before { content: '\2190'; font-size: .75rem; }
+    .pn-divider {
+      width: 1px; height: 18px; background: var(--line); flex-shrink: 0;
+    }
+    .pn-title {
+      font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--ink);
+    }
+    .pn-links {
+      list-style: none; display: flex; gap: 22px; align-items: center;
+      margin-left: auto;
+    }
+    .pn-links li a {
+      font-size: .58rem; letter-spacing: .06em; color: var(--mid);
+      text-decoration: none; transition: color .15s; cursor: pointer;
+    }
+    .pn-links li a:hover { color: var(--purple); }
+    .pn-links li a.pn-active { color: var(--purple); }
+
+    @media (max-width: 860px) {
+      .page-nav { padding-left: 24px; padding-right: 24px; }
+      .pn-links { display: none; }
+    }
+
+    /* ===========================================
+       COLLAPSIBLE PROJECTS
+    =========================================== */
+    .proj-header {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      cursor: pointer; gap: 20px; padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+      user-select: none;
+    }
+    .proj-header:hover .proj-chevron { background: rgba(109,76,255,0.14); border-color: var(--purple); color: var(--purple); }
+    /* Scale down the huge title inside the header */
+    .proj-header .proj-title {
+      font-size: clamp(1.6rem, 2.8vw, 2.6rem);
+      margin-bottom: 0; line-height: 1.05;
+    }
+    .proj-header .proj-eyebrow { margin-bottom: 6px; }
+    .proj-chevron {
+      width: 34px; height: 34px; border-radius: 50%;
+      border: 1.5px solid var(--line); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .7rem; color: var(--mid); margin-top: 6px;
+      transition: transform .35s ease, background .2s, border-color .2s, color .2s;
+    }
+    .proj-open .proj-chevron { transform: rotate(180deg); background: rgba(109,76,255,0.18); border-color: var(--purple); color: var(--purple); }
+
+    .proj-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .proj-body-inner { padding-top: 20px; }
+
+    /* Vid-feature collapsible */
+    .vf-header {
+      display: flex; align-items: center; justify-content: space-between;
+      cursor: pointer; padding: 20px 56px 12px; gap: 20px;
+    }
+    .vf-header:hover .proj-chevron { background: var(--pill); border-color: var(--mid); color: var(--ink); }
+    .vf-header .vf-title { font-size: clamp(1.3rem, 2.2vw, 1.9rem); font-weight: 700; letter-spacing: -.03em; line-height: 1; }
+    .vf-header .vf-sub { font-size: .6rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--purple); }
+    .vf-header-left { display: flex; flex-direction: column; gap: 6px; }
+    .vid-feature .vf-body { max-height: 0; overflow: hidden; transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1); }
+    .vid-feature.proj-open .proj-chevron { transform: rotate(180deg); }
+
+    @media (max-width: 860px) {
+      .page-toc { padding-left: 24px; padding-right: 24px; }
+      .vf-header { padding-left: 24px; padding-right: 24px; }
+    }
+
+    /* ===========================================
+       HOMEPAGE WORK-ITEM INLINE DRAWER
+    =========================================== */
+    .work-item.wi-active {
+      opacity: 1 !important;
+      background: rgba(109,76,255,0.05);
+      border-top-color: var(--purple) !important;
+    }
+    .work-item.wi-active .wi-title { color: var(--purple); }
+
+    .wi-drawer {
+      border-bottom: 1px solid var(--line);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .wi-drawer-inner {
+      padding: 28px 56px 36px;
+    }
+    .wi-drawer-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px; padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .wi-drawer-heading {
+      font-size: clamp(2rem, 3.5vw, 3.8rem);
+      font-weight: 700; letter-spacing: -.04em; line-height: 1;
+    }
+    .wi-drawer-heading em { font-style: italic; font-weight: 300; color: var(--mid); }
+    .wi-drawer-close {
+      font-size: .58rem; font-weight: 500; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--mid);
+      background: none; border: 1.5px solid var(--line);
+      border-radius: 40px; padding: 9px 20px; cursor: pointer;
+      font-family: 'Inter', sans-serif; transition: all .15s;
+      flex-shrink: 0;
+    }
+    .wi-drawer-close:hover { color: var(--purple); border-color: var(--purple); }
+
+    @media (max-width: 860px) {
+      .wi-drawer-inner { padding-left: 24px; padding-right: 24px; }
+    }
+
+    /* ===========================================
+       ACCESSIBILITY & FOCUS
+    =========================================== */
+    /* Keyboard focus ring — only shows on keyboard nav, not mouse */
+    :focus-visible {
+      outline: 2px solid var(--purple);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+    /* Remove default outline for mouse users */
+    :focus:not(:focus-visible) { outline: none; }
+
+    /* Screen-reader-only utility */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+    }
+
+    /* Minimum touch target size (WCAG 2.5.5) */
+    .toc-link, .pn-back, .filter-pill, .nav-cv,
+    .hero-cta, .hero-cta-fill, .c-submit, .pl, .c-link {
+      min-height: 44px;
+    }
+    .toc-link { display: inline-flex; align-items: center; }
+    .filter-pill { min-height: 36px; } /* pills in a row, slightly smaller OK */
+
+    /* Collapsible header keyboard focus */
+    .proj-header[tabindex]:focus-visible {
+      outline: 2px solid var(--purple);
+      outline-offset: -2px;
+      border-radius: 4px;
+    }
+
+    /* Lightbox keyboard focus */
+    #lb-close:focus-visible { color: #fff; outline: 2px solid var(--accent); }
+
+    /* Hide all sequential numbers before titles */
+    .ch-num, .proj-num, .wi-num { display: none; }
+
+    /* Fix work-item grid (was 44px [num] 1fr [title] auto [tag]) */
+    .work-item { grid-template-columns: 1fr auto; }
+  </style>
+</head>
+<body>
+<!-- WORK HOVER PREVIEW -->
+<div id="work-preview" aria-hidden="true">
+  <img id="wp-img" src="" alt="" />
+</div>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <button id="lb-close" aria-label="Close image viewer">Close ✕</button>
+  <img id="lb-img" src="" alt="" />
+</div>
+
+
+
+<div class="page active" id="page-home">
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a class="nav-logo" href="#" data-page="home">
+    <img class="nav-logo-img" src="MYLOGO.svg" alt="Omer Policker logo" width="160" height="36" fetchpriority="high" />
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#home" data-page="home">Home</a></li>
+    <li><a href="#interactive" data-page="interactive">Interactive</a></li>
+    <li><a href="#design" data-page="design">Design</a></li>
+    <li><a href="#video" data-page="video">Video</a></li>
+    <li><a href="#writing" data-page="writing">Writing</a></li>
+    <li><a href="#contact" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- ══════════════════════════════════
+     HOME
+══════════════════════════════════ -->
+<div id="home">
+  <div class="hero-name-wrap">
+    <p class="hero-eye reveal">Available for work · Tel Aviv</p>
+    <h1 class="hero-name reveal rd1"><span class="hero-char">O</span><span class="hero-char">m</span><span class="hero-char">e</span><span class="hero-char">r</span><span class="hero-char"> </span><span class="hero-char">P</span><span class="hero-char">o</span><span class="hero-char">l</span><span class="hero-char">i</span><span class="hero-char">c</span><span class="hero-char">k</span><span class="hero-char">e</span><span class="hero-char">r</span></h1>
+  </div>
+  <div class="hero-bottom">
+    <div class="hero-left">
+      <p class="hero-title reveal">About Me</p>
+      <p class="hero-desc reveal rd1">A dedicated MFA student in Digital Media, currently in her final year, passionate about blending creativity with technology to craft engaging and meaningful digital experiences. Her work bridges design, storytelling, and interactivity, with a focus on marketing and interactive media.</p>
+      <div class="hero-ctas reveal rd2">
+        <a class="hero-cta-fill" href="#contact" data-page="contact" aria-label="Contact Omer Policker">Contact Me</a>
+        <a class="hero-cta" href="#work" aria-label="View selected work">View Work</a>
+      </div>
+    </div>
+    <div class="hero-right reveal rd1">
+      <div class="badge-row">
+        <span class="badge">🏆 Game Jam Winner 2025</span>
+        <span class="badge">MFA &amp; BA in Digital Media — Tel Aviv University</span>
+        <span class="badge">Built socials &amp; websites from scratch</span>
+      </div>
+      <div class="hero-tools">
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/figmaicon.png" alt="Figma" width="32" height="32" loading="lazy" />
+          <span class="tool-name">Figma</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/photoshopicon.png" alt="Photoshop" width="32" height="32" loading="lazy" />
+          <span class="tool-name">Photoshop</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/After_Effectsicon.png" alt="After Effects" width="32" height="32" loading="lazy" />
+          <span class="tool-name">After Effects</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/Premiere_Proicon.png" alt="Premiere Pro" width="32" height="32" loading="lazy" />
+          <span class="tool-name">Premiere Pro</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/htmlcssandjavascripticons.png" alt="HTML CSS JavaScript" width="32" height="32" loading="lazy" />
+          <span class="tool-name">HTML · CSS · JS</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/mailchimicon.png" alt="Mailchimp" width="32" height="32" loading="lazy" />
+          <span class="tool-name">Mailchimp</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/canvaicon.png" alt="Canva" width="32" height="32" loading="lazy" />
+          <span class="tool-name">Canva</span>
+        </div>
+
+        <div class="tool-item">
+          <img class="tool-icon" src="homepage/unityicon.png" alt="Unity" width="32" height="32" loading="lazy" />
+          <span class="tool-name">Unity</span>
+        </div>
+
+        <div class="tool-item">
+          <span class="tool-icon-badge">Ren'Py</span>
+          <span class="tool-name">RenPy</span>
+        </div>
+
+      </div>
+      <span class="hero-scroll">Scroll ↓</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     SELECTED WORK
+══════════════════════════════════ -->
+<!-- RECENT WORK (homepage overview) -->
+<div class="sec" id="work">
+  <span class="sec-label reveal">Recent Work</span>
+  <div class="filter-row reveal">
+    <span class="filter-label">Filter by project type</span>
+    <div class="filter-pills">
+      <button class="filter-pill active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-pill" data-filter="interactive" aria-pressed="false">Interactive</button>
+      <button class="filter-pill" data-filter="design" aria-pressed="false">Design</button>
+      <button class="filter-pill" data-filter="video" aria-pressed="false">Video</button>
+      <button class="filter-pill" data-filter="writing" aria-pressed="false">Writing</button>
+    </div>
+  </div>
+  <div class="work-list" role="list">
+    <!-- INTERACTIVE -->
+    <!-- INTERACTIVE -->
+    <a class="work-item reveal" role="listitem" href="#gangang" data-page="interactive" data-anchor="gangang" data-cat="interactive" data-preview="homepage/ganggangpreview.png">
+      <span class="wi-num">01</span>
+      <div><div class="wi-title">GANGANG</div><div class="wi-role">UX/UI · Cut Scene Animator &amp; Director</div></div>
+      <span class="wi-tag">Interactive</span>
+    </a>
+    <a class="work-item reveal" role="listitem" href="#melancholypocket" data-page="interactive" data-anchor="melancholypocket" data-cat="interactive" data-preview="homepage/melancholypocketpreview.png">
+      <span class="wi-num">02</span>
+      <div><div class="wi-title">Melancholy Pocket</div><div class="wi-role">Web &amp; UX Design · Development</div></div>
+      <span class="wi-tag">Interactive</span>
+    </a>
+    <a class="work-item reveal" role="listitem" href="#midas" data-page="interactive" data-anchor="midas" data-cat="interactive" data-preview="homepage/kingmidaspreview.png">
+      <span class="wi-num">03</span>
+      <div><div class="wi-title">King Midas</div><div class="wi-role">Interactive Narrative · RenPy · Featured in BA Curriculum</div></div>
+      <span class="wi-tag">Interactive</span>
+    </a>
+    <!-- DESIGN -->
+    <a class="work-item reveal" role="listitem" href="#tlv" data-page="design" data-anchor="tlv" data-cat="design" data-preview="homepage/TELAVIVDESIGNPREVIEW.png">
+      <span class="wi-num">04</span>
+      <div><div class="wi-title">Tel Aviv University</div><div class="wi-role">Museum Brochure · Large-Format Infographic Stand · General Public &amp; University Community</div></div>
+      <span class="wi-tag">Design</span>
+    </a>
+    <a class="work-item reveal" role="listitem" href="#jhmedical" data-page="design" data-anchor="jhmedical" data-cat="design" data-preview="homepage/JHMEDICALPREVIEW.png">
+      <span class="wi-num">05</span>
+      <div><div class="wi-title">JHMedical</div><div class="wi-role">Brand Identity · Website Build · Marketing</div></div>
+      <span class="wi-tag">Design</span>
+    </a>
+    <!-- VIDEO -->
+    <a class="work-item reveal" role="listitem" href="#vid-bigger" data-page="video" data-anchor="vid-bigger" data-cat="video" data-preview="homepage/BIGGERVIDEOPREVIEW.png">
+      <span class="wi-num">06</span>
+      <div><div class="wi-title">Bigger</div><div class="wi-role">Special Effects · VFX Clip</div></div>
+      <span class="wi-tag">Video</span>
+    </a>
+    <a class="work-item reveal" role="listitem" href="#vid-upthere" data-page="video" data-anchor="vid-upthere" data-cat="video" data-preview="homepage/UPTHERVIDEOPREVIEW.png">
+      <span class="wi-num">07</span>
+      <div><div class="wi-title">Up There</div><div class="wi-role">Short Animation · Motion Design</div></div>
+      <span class="wi-tag">Video</span>
+    </a>
+    <!-- WRITING -->
+    <a class="work-item reveal" role="listitem" href="writing/Cognitive Decline as Experienced in The Father (2020) and Vortex (2021).pdf" target="_blank" rel="noopener" data-cat="writing" data-preview="homepage/COGNATIVEDECLINEWRITINGPREVIEW.png">
+      <span class="wi-num">08</span>
+      <div><div class="wi-title">Cognitive Decline</div><div class="wi-role">The Father (2020) and VoRtex (2021) · Academic Paper</div></div>
+      <span class="wi-tag">Writing</span>
+    </a>
+    <a class="work-item reveal" role="listitem" href="writing/Mama, Welcome To the 60s- Nostalgia and Change in Hairspray (1988) and Hairspray (2007).pdf" target="_blank" rel="noopener" data-cat="writing" data-preview="homepage/WELCOMETOTHE50SWRITINGPREVIEW.png">
+      <span class="wi-num">09</span>
+      <div><div class="wi-title">Mama, Welcome To the 60s</div><div class="wi-role">Nostalgia &amp; Change in Hairspray · Academic Paper</div></div>
+      <span class="wi-tag">Writing</span>
+    </a>
+  </div>
+</div>
+
+<!-- HOME CONTACT -->
+<div id="contact" style="padding: 52px 56px; border-top: 1px solid var(--line);">
+  <h2 class="c-big reveal">Get<br><em>in touch.</em></h2>
+  <p class="c-sub reveal">From interactive experiences to branding and marketing strategy, I'm always excited to bring ideas to life. Tell me about your project.</p>
+  <form class="c-form reveal" action="mailto:omerpolicker@gmail.com" method="post" enctype="text/plain" aria-label="Contact form">
+    <div class="c-form-row">
+      <div class="c-field">
+        <label class="c-label" for="hcf-name">Name</label>
+        <input class="c-input" type="text" id="hcf-name" name="Name" placeholder="Your name" required />
+      </div>
+      <div class="c-field">
+        <label class="c-label" for="hcf-email">Email</label>
+        <input class="c-input" type="email" id="hcf-email" name="Email" placeholder="your@email.com" required />
+      </div>
+    </div>
+    <div class="c-field">
+      <label class="c-label" for="hcf-phone">Phone (optional)</label>
+      <input class="c-input" type="tel" id="hcf-phone" name="Phone" placeholder="+972 XX-XXX-XXXX" />
+    </div>
+    <div class="c-field">
+      <label class="c-label" for="hcf-msg">Message</label>
+      <textarea class="c-input c-textarea" id="hcf-msg" name="Message" placeholder="Tell me about your project..." rows="5" required></textarea>
+    </div>
+    <button class="c-submit" type="submit">Send Message</button>
+  </form>
+  <div class="c-links reveal">
+    <a class="c-link" href="mailto:omerpolicker@gmail.com">omerpolicker@gmail.com</a>
+    <a class="c-link" href="https://omerpolicker.itch.io" target="_blank" rel="noopener">Itch.io</a>
+    <a class="c-link" href="https://www.linkedin.com/in/omer-policker" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div>
+
+</div><!-- /page-home -->
+
+<div class="page" id="page-interactive">
+<nav class="page-nav" aria-label="Section navigation">
+  <button class="pn-back" data-page="home">Home</button>
+  <div class="pn-divider"></div>
+  <span class="pn-title">Interactive</span>
+  <ul class="pn-links" role="list">
+    <li><a href="#" data-page="interactive" class="pn-active">Interactive</a></li>
+    <li><a href="#" data-page="design">Design</a></li>
+    <li><a href="#" data-page="video">Video</a></li>
+    <li><a href="#" data-page="writing">Writing</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- ══════════════════════════════════
+     Interactive
+══════════════════════════════════ -->
+<div class="chapter reveal" id="interactive" data-title="Interactive">
+  <div class="ch-header-row">
+    <span class="ch-num">01</span>
+    <h2 class="ch-title">Interactive</h2>
+    <p class="ch-sub">Games, interactive documentaries, browser experiences &amp; UX prototypes</p>
+  </div>
+</div>
+
+<!-- ── 01 GANGANG ─────────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="gangang">
+  <div class="proj-eyebrow">
+    <span class="proj-num">01</span>
+    <span class="proj-badge">2025 Game Jam Winner</span>
+  </div>
+  <h2 class="proj-title">GANG<em>GANG</em></h2>
+
+  <div class="proj-links">
+    <a class="pl fill" href="https://www.youtube.com/watch?v=rqEtecTcLuQ" target="_blank" rel="noopener">Watch Gameplay</a>
+    <a class="pl" href="https://drive.google.com/drive/folders/1FKnf0ejEK5HNzib9TOo6ov7qGWytK5Za?usp=sharing" target="_blank" rel="noopener">Download Game</a>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Year</span><span class="mc-val">2025</span></div>
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">UX/UI Designer · Cut Scene Animator &amp; Director</span></div>
+    <div class="meta-cell"><span class="mc-label">Tools</span><span class="mc-val">After Effects · Photoshop · Unity · ElevenLabs</span></div>
+    <div class="meta-cell"><span class="mc-label">Outcome</span><span class="mc-val">1st Place — TAU Game Jam 2025</span></div>
+  </div>
+
+  <div class="proj-cover">
+    <img src="interactive/ganggang/gangganglogo.png" alt="GANGANG" loading="lazy" />
+  </div>
+
+  <p class="proj-overview">2D action game where the player disguises their character to arrest gangsters and save the town. Won 1st Place at the 2025 TAU Game Jam. I designed the full UI/UX and directed and animated both original cut scenes.</p>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">UX &amp; Interface Design</div>
+        <p class="sd">Designed all UI flows and interface elements — main menu, HUD, and disguise mechanic. Visual language needed to feel playful and immediate while keeping controls intuitive under pressure.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Character &amp; Visual Asset Curation</div>
+        <p class="sd">Curated all character 3D models and in-game visual assets, establishing a consistent aesthetic between gameplay and the cinematic cut scenes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Cut Scene Direction &amp; Animation</div>
+        <p class="sd">Directed, storyboarded, and animated two original cut scenes in After Effects — establishing the world, characters, and tone.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">UX &amp; Design Breakdown</p>
+  <div class="img-block wide">
+    <img src="interactive/ganggang/ganggangUXdesign.png" alt="GANGANG UX Design Breakdown" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">Cut Scene — Scene 1</p>
+  <div class="vid-wrap">
+    <video controls preload="none" poster="interactive/ganggangpreview.png">
+      <source src="interactive/ganggang/cutscene1.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <p class="sh">Cut Scene — Scene 2</p>
+  <div class="vid-wrap" style="margin-bottom:32px;">
+    <video controls preload="none">
+      <source src="interactive/ganggang/cutscene2.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <p class="sh">Game Jam Win Certificate</p>
+  <div class="img-block small" style="max-width:560px;">
+    <img src="interactive/ganggang/gangganggamejamwincertificate.png" alt="Game Jam Win Certificate" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+</div>
+</div>
+
+<!-- ── 02 MELANCHOLY POCKET ─────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="melancholypocket">
+  <div class="proj-eyebrow"><span class="proj-num">02</span></div>
+  <h2 class="proj-title"><em>Melancholy</em> Pocket</h2>
+
+  <div class="proj-links">
+    <a class="pl fill" href="https://otgomie.wixsite.com/melancholypocket" target="_blank" rel="noopener">Go To Website</a>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Year</span><span class="mc-val">2024</span></div>
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">Web Designer · UX Developer</span></div>
+    <div class="meta-cell"><span class="mc-label">Tools</span><span class="mc-val">Wix · Figma · HTML / CSS</span></div>
+    <div class="meta-cell"><span class="mc-label">Type</span><span class="mc-val">Interactive Documentary · TAU Project</span></div>
+  </div>
+
+  <div class="proj-cover">
+    <img src="interactive/melancolypocket/melancholypocketlogo.png" alt="Melancholy Pocket" loading="lazy" />
+  </div>
+
+  <p class="proj-overview">An interactive documentary preserving the memory of the old Israeli Broadcast Television building in Jerusalem. Visitors explore personal histories, footage, and objects through an immersive web interface. How does a building's memory live on when the building is gone?</p>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Research &amp; Narrative Structure</div>
+        <p class="sd">Researched the building's history and mapped the stories, artifacts, and personal accounts forming the documentary's backbone. Each section tied to a specific memory.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">UX Wireframing</div>
+        <p class="sd">Translated the documentary structure into user flows and wireframes. Designed an interface allowing visitors to drift between spaces, surfacing archival material through interaction rather than passive scrolling.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Visual Design</div>
+        <p class="sd">Developed a visual language echoing Polly Pocket toy houses — purple and pink tones, smooth textures reflecting the accumulation of time and memory.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>04</span></div>
+      <div class="sb">
+        <div class="st">Development &amp; Launch</div>
+        <p class="sd">Built and deployed on Wix with custom CSS and interactive layers. Publicly accessible — making this piece of broadcast history available to all.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">Wireframe</p>
+  <div class="img-block wide">
+    <img src="interactive/melancolypocket/melancolypocketWireframe.png" alt="Melancholy Pocket Wireframe" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">Project Breakdown</p>
+  <div class="img-block wide">
+    <img src="interactive/melancolypocket/melancolypocketsappbreakdown.png" alt="Melancholy Pocket Breakdown" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+</div>
+</div>
+
+<!-- ── 03 KING MIDAS ──────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="midas">
+  <div class="proj-eyebrow"><span class="proj-num">03</span></div>
+  <h2 class="proj-title">King <em>Midas</em></h2>
+
+  <div class="proj-links">
+    <a class="pl fill" href="https://omerpolicker.itch.io/midas" target="_blank" rel="noopener">Download on Itch.io</a>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Year</span><span class="mc-val">2023</span></div>
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">Technical &amp; Creative Developer</span></div>
+    <div class="meta-cell"><span class="mc-label">Tools</span><span class="mc-val">RenPy · Python · Photoshop</span></div>
+    <div class="meta-cell"><span class="mc-label">Recognition</span><span class="mc-val">In TAU Digital Media BA Curriculum</span></div>
+  </div>
+
+  <div class="proj-cover">
+    <img src="interactive/kingmidas/kingmidaslogo.png" alt="King Midas" loading="lazy" />
+  </div>
+
+  <p class="proj-overview">An interactive story game built in RenPy, following the myth of King Midas. Branching dialogue and player choices explore greed, consequence, and regret. Now part of the TAU Digital Media BA curriculum.</p>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Narrative Scripting &amp; Branching Logic</div>
+        <p class="sd">Wrote the full branching narrative in Python/RenPy with multiple story paths where choices carry real consequences — compounding the curse or offering momentary relief.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Visual Asset Creation</div>
+        <p class="sd">Illustrated all game backgrounds, characters, and UI elements in Photoshop and Canva — ancient myth through a contemporary visual lens.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Programming, Integration &amp; Testing</div>
+        <p class="sd">Coded all game logic, scene transitions, and decision trees. Tested every branching path to ensure narrative coherence and no dead ends.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">Game Breakdown Screens</p>
+  <div class="img-block wide">
+    <img src="interactive/kingmidas/kingmidasbreakdownscreens.png" alt="King Midas Breakdown Screens" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+</div>
+</div>
+
+<!-- ── 04 BEGIN TO GROW ────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="begin2grow">
+  <div class="proj-eyebrow"><span class="proj-num">04</span></div>
+  <h2 class="proj-title">Begin <em>to Grow</em></h2>
+
+  <div class="proj-links">
+    <a class="pl fill" href="https://www.figma.com/proto/RjgPtURXqmHUNsRREabxh8/Grow-Struggle?node-id=6-6887&starting-point-node-id=6%3A6887" target="_blank" rel="noopener">Figma Prototype</a>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Year</span><span class="mc-val">2024</span></div>
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">UX/UI Designer · Prototyper</span></div>
+    <div class="meta-cell"><span class="mc-label">Tools</span><span class="mc-val">Figma</span></div>
+    <div class="meta-cell"><span class="mc-label">Type</span><span class="mc-val">UX Prototype · Mobile App</span></div>
+  </div>
+
+  <div class="proj-cover">
+    <img src="interactive/begin2grow/Begintogrowlogo.png" alt="Begin To Grow" loading="lazy" />
+  </div>
+
+  <p class="proj-overview">A Figma UX prototype for a plant care app for curious beginners. Helps users discover plants, build confidence through guided routines, and develop lasting care habits.</p>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">User Research &amp; Problem Definition</div>
+        <p class="sd">Identified key pain points: overwhelm at purchase, inconsistent reminders, and fear of failure. Beginners need guidance specific to their plant, space, and experience — not generic tips.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Information Architecture &amp; Onboarding</div>
+        <p class="sd">Organised plant categories, care guides, schedules, and progress tracking into a low-friction hierarchy. Onboarding profiles the user's environment — light, space, experience — before surfacing any recommendations.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Interactive Figma Prototype</div>
+        <p class="sd">Built a fully interactive prototype spanning onboarding, plant discovery, care scheduling, and progress tracking — with warm micro-animations matching the emotional register of a product built around care.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">App Breakdown</p>
+  <div class="img-block wide">
+    <img src="interactive/begin2grow/Begintogrowappbreakdown.png" alt="Begin To Grow App Breakdown" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+</div>
+</div>
+
+<!-- ── 05 DOROTHY ─────────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="dorothy">
+  <div class="proj-eyebrow"><span class="proj-num">05</span></div>
+  <h2 class="proj-title"><em>Dorothy</em></h2>
+
+  <div class="proj-links">
+    <a class="pl fill" href="http://omerpolicker.github.io/DorothyMain.html" target="_blank" rel="noopener">Play Dorothy</a>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Year</span><span class="mc-val">2023</span></div>
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">Developer · Designer</span></div>
+    <div class="meta-cell"><span class="mc-label">Tools</span><span class="mc-val">HTML · CSS · JavaScript</span></div>
+    <div class="meta-cell"><span class="mc-label">Type</span><span class="mc-val">Browser Game · TAU Gamification Course</span></div>
+  </div>
+
+  <p class="proj-overview">A browser game built from scratch for a TAU gamification course. Dorothy inverts the typical action-game win condition — the player must guide the character with sensitivity and care, not aggression.</p>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Concept &amp; Gamification Theory</div>
+        <p class="sd">Grounded in gamification theory: aggression and speed are penalised; patience and care are the only path to winning. Translated academic literature on empathy-based game design into a playable form.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Design</div>
+        <p class="sd">Designed all visual assets with a deliberately soft, warm aesthetic — colour, typography, and character design all reinforcing care over conflict.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Development</div>
+        <p class="sd">Built the complete game in vanilla HTML, CSS, and JavaScript — no frameworks. Every mechanic was intentional, suited to a project where mechanics do philosophical work.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div><!-- /page-interactive -->
+
+<div class="page" id="page-design">
+<nav class="page-nav" aria-label="Section navigation">
+  <button class="pn-back" data-page="home">Home</button>
+  <div class="pn-divider"></div>
+  <span class="pn-title">Design</span>
+  <ul class="pn-links" role="list">
+    <li><a href="#" data-page="interactive">Interactive</a></li>
+    <li><a href="#" data-page="design" class="pn-active">Design</a></li>
+    <li><a href="#" data-page="video">Video</a></li>
+    <li><a href="#" data-page="writing">Writing</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- ══════════════════════════════════
+     DESIGN
+══════════════════════════════════ -->
+<div class="chapter reveal" id="design" data-title="Design">
+  <div class="ch-header-row">
+    <span class="ch-num">02</span>
+    <h2 class="ch-title">Design</h2>
+    <p class="ch-sub">Brand identity, marketing strategy, print, posters &amp; client campaigns</p>
+  </div>
+</div>
+
+<!-- ── ENGLISH COACH ──────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="englishcoach">
+  <div class="proj-eyebrow"><span class="proj-num">EC</span></div>
+  <h2 class="proj-title"><em>English</em><br>Coach</h2>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">Marketing &amp; Sales Specialist</span></div>
+    <div class="meta-cell"><span class="mc-label">Scope</span><span class="mc-val">Social · Email · Campaigns · Partnerships</span></div>
+    <div class="meta-cell"><span class="mc-label">Duration</span><span class="mc-val">12 Months</span></div>
+  </div>
+
+  <div class="client-row">
+    <div class="logo-pill">
+      <img src="design/englishcoach/logoenglishcoach.png" alt="English Coach logo" loading="lazy" />
+    </div>
+    <p class="proj-overview" style="margin-bottom:0;">Led marketing and brand strategy at English Coach — email, social media, campaigns, visual design, and partnerships. Over eight months, the brand went from minimal digital presence to a fully active, lead-generating platform.</p>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat">
+      <div class="stat-n">40%</div>
+      <div class="stat-d">LinkedIn follower growth within eight months through structured content and strategic positioning</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n">2,500%</div>
+      <div class="stat-d">Instagram following growth, with engagement increasing by up to 680% per post</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n">0 → ∞</div>
+      <div class="stat-d">Social channels shifted from generating zero leads to producing qualified inbound business inquiries</div>
+    </div>
+    <div class="stat">
+      <div class="stat-n">↑</div>
+      <div class="stat-d">Increased website traffic driven by integrated social strategy and campaign funnels</div>
+    </div>
+  </div>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Brand Audit &amp; Content Strategy</div>
+        <p class="sd">Audited existing brand materials and digital presence, identifying gaps in voice, visual identity, and platform strategy. Developed content pillars for LinkedIn and Instagram with a structured calendar.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Campaign Design &amp; Partnership Activation</div>
+        <p class="sd">Designed and executed campaign visuals for EC × Poalim and EC × Shenkar, each tailored to the partner's audience while maintaining EC brand coherence and driving measurable leads.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Email Marketing System</div>
+        <p class="sd">Designed a full email marketing system — newsletter layouts, promotional sequences, and announcement templates — built for reuse and easy adaptation as campaign volume scaled.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>04</span></div>
+      <div class="sb">
+        <div class="st">Growth &amp; Ongoing Optimisation</div>
+        <p class="sd">Monitored metrics across all platforms and iterated rapidly on content strategy. The 2,500% Instagram growth and 40% LinkedIn growth were the product of continuous adjustment — not a single decision.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">Social Media Growth</p>
+  <div class="col2">
+    <div class="img-block"><img src="design/englishcoach/englishcoachinstagramscreen.png" alt="English Coach Instagram" onclick="openLightbox(this)" loading="lazy" /></div>
+    <div class="img-block"><img src="design/englishcoach/englishcoachlinkedinscreen.png" alt="English Coach LinkedIn" onclick="openLightbox(this)" loading="lazy" /></div>
+  </div>
+
+  <p class="sh">Email Marketing Template</p>
+  <div class="img-block">
+    <img src="design/englishcoach/DESIGN-EMAILMARKETING.png" alt="Email Marketing Design" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">Campaign Designs — EC × Poalim &amp; EC × Shenkar</p>
+  <div class="col2">
+    <div class="img-block"><img src="design/englishcoach/DESIGN-ECXPOALIM.png" alt="English Coach × Poalim" onclick="openLightbox(this)" loading="lazy" /></div>
+    <div class="img-block"><img src="design/englishcoach/DESIGN-ECXSHENKAR.png" alt="English Coach × Shenkar" onclick="openLightbox(this)" loading="lazy" /></div>
+  </div>
+</div>
+</div>
+
+<!-- ── JHMEDICAL ──────────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="jhmedical">
+  <div class="proj-eyebrow"><span class="proj-num">JH</span></div>
+  <h2 class="proj-title">JH<em>Medical</em></h2>
+
+  <div class="proj-links">
+    <a class="pl fill" href="http://jhmedical.co" target="_blank" rel="noopener">Visit Website</a>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">Designer · Marketing Lead</span></div>
+    <div class="meta-cell"><span class="mc-label">Scope</span><span class="mc-val">Website · Brand · LinkedIn · Print · Translation</span></div>
+    <div class="meta-cell"><span class="mc-label">Audience</span><span class="mc-val">Medical B2B · International</span></div>
+  </div>
+
+  <div class="client-row">
+    <div class="logo-pill">
+      <img src="design/jhmedical/logojhmedical.png" alt="JHMedical logo" loading="lazy" />
+    </div>
+    <p class="proj-overview" style="margin-bottom:0;">Led design and marketing for JH Medical from the ground up — website, LinkedIn, infographics, marketing animations, business cards, and Hebrew-to-English translation for international audiences.</p>
+  </div>
+
+  <p class="proc-label">Process</p>
+  <div class="steps">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Brand Identity &amp; Visual System</div>
+        <p class="sd">Developed the full visual identity — logo, colour palette, typographic standards — communicating precision and credibility to a specialist B2B medical audience.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Website Design &amp; Build</div>
+        <p class="sd">Designed and built JHMedical's website from scratch — clean information hierarchy, professional photography, and navigation structured for a B2B medical context.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">LinkedIn Strategy &amp; Content Production</div>
+        <p class="sd">Developed a LinkedIn content strategy with consistent post visuals, infographic cards, and announcements — building the company's professional presence from near zero.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>04</span></div>
+      <div class="sb">
+        <div class="st">Marketing Animations &amp; Infographics</div>
+        <p class="sd">Produced motion graphic videos and static infographics to communicate complex medical and business information quickly and clearly for LinkedIn and web.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>05</span></div>
+      <div class="sb">
+        <div class="st">Translation &amp; International Communication</div>
+        <p class="sd">Translated all medical and marketing content from Hebrew to English — website copy, LinkedIn posts, infographics, and printed materials for international medical partners.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">LinkedIn Content</p>
+  <div class="img-block">
+    <img src="design/jhmedical/linkedinjhmedical.png" alt="JHMedical LinkedIn" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">Website — Laptop &amp; Mobile</p>
+  <div class="img-block">
+    <img src="design/jhmedical/jhmeddicalwebdesign-iphoneandlaptopscreen.png" alt="JHMedical Website" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">Business Card</p>
+  <div class="img-block small" style="max-width:600px;">
+    <img src="design/jhmedical/jhmedicalbuisnesscard-frontandback.png" alt="JHMedical Business Card" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">Marketing &amp; Infographic Design</p>
+  <div class="col2">
+    <div class="img-block"><img src="design/jhmedical/marketingandinfographicdesign1.png" alt="JHMedical Marketing 1" onclick="openLightbox(this)" loading="lazy" /></div>
+    <div class="img-block"><img src="design/jhmedical/marketingandinfographicdesign2.png" alt="JHMedical Marketing 2" onclick="openLightbox(this)" loading="lazy" /></div>
+  </div>
+
+  <p class="sh">Marketing Animations</p>
+  <div class="col2">
+    <div class="vid-wrap" style="margin-bottom:0;">
+      <video controls preload="none"><source src="design/jhmedical/marketingandinfographicdesign3.mp4" type="video/mp4" /></video>
+    </div>
+    <div class="vid-wrap" style="margin-bottom:0;">
+      <video controls preload="none"><source src="design/jhmedical/marketingandinfographicdesign4.mp4" type="video/mp4" /></video>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ── LOGOS ──────────────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="logos">
+  <div class="proj-eyebrow"><span class="proj-num">03</span></div>
+  <h2 class="proj-title"><em>Logo</em><br>Design</h2>
+
+  <p class="proj-overview">Logo design and brand identity — from original mark creation to full rebranding. Each project begins with understanding the business's core identity: what it does, who it serves, and how it should feel on first contact.</p>
+
+  <p class="proc-label">Didit Camera — AI-Driven Surveillance System</p>
+  <p style="font-size:.82rem;font-weight:300;line-height:1.8;color:var(--mid);max-width:660px;margin-bottom:24px;">Logo for an AI-Driven Surveillance System. The mark needed to feel watchful and intelligent without becoming threatening.</p>
+
+  <div class="steps" style="margin-bottom:28px;">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Brief &amp; Concept Development</div>
+        <p class="sd">Defined brand attributes — surveillance precision, AI intelligence, constant presence — and explored visual directions: eye forms, aperture references, data motifs. Each evaluated at small sizes and across contexts.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Refinement &amp; Finalisation</div>
+        <p class="sd">Refined the strongest concept through multiple rounds — adjusting proportions, weight, and colour until complete. Tested across backgrounds and scales before delivery.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--pill);border-radius:8px;padding:44px;display:flex;align-items:center;justify-content:center;margin-bottom:8px;max-width:400px;">
+    <img src="design/logosection/didit/dititlogo.png" alt="Didit Camera logo" onclick="openLightbox(this)" style="max-width:180px;max-height:120px;object-fit:contain;display:block;cursor:none;" loading="lazy" />
+  </div>
+  <p class="img-cap">Didit Camera — final mark</p>
+
+  <p class="sh">Process</p>
+  <div class="col2">
+    <div class="img-block"><img src="design/logosection/didit/dititprocess1.png" alt="Didit process 1" onclick="openLightbox(this)" loading="lazy" /></div>
+    <div class="img-block"><img src="design/logosection/didit/dititprocess2.png" alt="Didit process 2" onclick="openLightbox(this)" loading="lazy" /></div>
+  </div>
+
+  <div style="margin-top:48px;padding-top:44px;border-top:1px solid var(--line);">
+    <p class="proc-label">Re-Design Project — Local Business Rebranding</p>
+    <p style="font-size:.82rem;font-weight:300;line-height:1.8;color:var(--mid);max-width:660px;margin-bottom:24px;">For hands-on experience, I identified local businesses whose logos I could challenge and improve — honouring existing equity while elevating visual presence.</p>
+
+    <div class="steps" style="margin-bottom:28px;">
+      <div class="step">
+        <div class="sn"><span>01</span></div>
+        <div class="sb">
+          <div class="st">Audit &amp; Positioning</div>
+          <p class="sd">Studied each business — signage, materials, online presence — identifying the gap between current visual identity and actual quality and positioning.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="sn"><span>02</span></div>
+        <div class="sb">
+          <div class="st">Rebrand Design</div>
+          <p class="sd">Developed updated logos for a market stall and a taco bar, retaining something of the original while clearly elevating brand quality perception.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col2">
+      <div class="img-block"><img src="design/logosection/redesignproject/shukhayerakot.png" alt="Shuk Hayerakot rebrand" onclick="openLightbox(this)" loading="lazy" /></div>
+      <div class="img-block"><img src="design/logosection/redesignproject/taco.png" alt="Taco Tortilla Bar rebrand" onclick="openLightbox(this)" loading="lazy" /></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ── PRINT & INFOGRAPHICS ───────── -->
+<div class="project-wrap">
+<div class="project reveal" id="print">
+  <div class="proj-eyebrow"><span class="proj-num">04</span></div>
+  <h2 class="proj-title">Print &amp;<br><em>Infographics</em></h2>
+
+  <p class="proj-overview">Print design spanning brochures and infographic publications — translating complex information into coherent layouts where every design decision is permanent.</p>
+
+  <p class="proc-label">Approach</p>
+  <div class="steps" style="margin-bottom:36px;">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Content Architecture</div>
+        <p class="sd">Mapped the information hierarchy before any visual design — what the reader needs first, second, and in what depth. Every layer placed in the correct order before the grid was built.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Grid &amp; Typography</div>
+        <p class="sd">Established a precise grid system for each piece, selecting typefaces for print rendering specifically — what reads well on screen often requires adjustment for paper and ink.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Print Preparation</div>
+        <p class="sd">Prepared all files for professional print — bleed, crop marks, CMYK colour profiles, embedded fonts, and resolution — ensuring screen designs printed faithfully.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">Brochures</p>
+  <div class="col2">
+    <div class="img-block"><img src="design/printsection/brochure-1.png" alt="Brochure spread 1" onclick="openLightbox(this)" loading="lazy" /></div>
+    <div class="img-block"><img src="design/printsection/brochure-2.png" alt="Brochure spread 2" onclick="openLightbox(this)" loading="lazy" /></div>
+  </div>
+
+  <p class="sh">Infographics</p>
+  <div class="col2">
+    <div class="img-block"><img src="design/printsection/infographic LGBTQTLV.png" alt="LGBTQ TLV Infographic" onclick="openLightbox(this)" loading="lazy" /></div>
+    <div class="img-block"><img src="design/printsection/infographic TAU research.png" alt="TAU Research Infographic" onclick="openLightbox(this)" loading="lazy" /></div>
+  </div>
+</div>
+</div>
+
+<!-- ── POSTERS ────────────────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="posters">
+  <div class="proj-eyebrow"><span class="proj-num">05</span></div>
+  <h2 class="proj-title"><em>Poster</em><br>Design</h2>
+
+  <p class="proj-overview">Poster design for film and festival contexts — distilling a complete story into a single arresting visual moment. Composition, typographic hierarchy, and negative space all used toward that singular goal.</p>
+
+  <p class="proc-label">Approach</p>
+  <div class="steps" style="margin-bottom:36px;">
+    <div class="step">
+      <div class="sn"><span>01</span></div>
+      <div class="sb">
+        <div class="st">Film / Event Research &amp; Concept</div>
+        <p class="sd">Closely studied each film or event — genre, tone, characters, central conflict — identifying the single image or tension the entire work orbits around.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>02</span></div>
+      <div class="sb">
+        <div class="st">Composition &amp; Typography</div>
+        <p class="sd">Designed the visual hierarchy: image first, title second, credits third. Typography specific to genre; composition resolved through thumbnail sketches before detail work began.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="sn"><span>03</span></div>
+      <div class="sb">
+        <div class="st">Refinement</div>
+        <p class="sd">Iterated on colour, contrast, and image treatment until emotionally resonant — pushing past the first functional version to the one that actually stops people.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="sh">Movie Posters — Fire Island · Fraud · Kissing Jessica Stein</p>
+  <div class="img-block wide">
+    <img src="design/posterssection/3MOVIEPOSTERS-FIREISLAND-FRAUD-KISSINGJESSICASTEIN.png" alt="Movie Posters" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">TISFF Film Festival Poster Series</p>
+  <div class="img-block wide">
+    <img src="design/posterssection/2POSTERS-FILMBUSPROJECTSTISFF.png" alt="TISFF Film Festival Posters" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+</div>
+</div>
+
+<!-- ── TEL AVIV UNIVERSITY ────────── -->
+<div class="project-wrap">
+<div class="project reveal" id="tlv">
+  <div class="proj-eyebrow"><span class="proj-num">06</span></div>
+  <h2 class="proj-title">Tel Aviv<br><em>University</em></h2>
+
+  <div class="meta-strip">
+    <div class="meta-cell"><span class="mc-label">Client</span><span class="mc-val">Tel Aviv University</span></div>
+    <div class="meta-cell"><span class="mc-label">Deliverables</span><span class="mc-val">Museum Brochure · Large-Format Infographic Stand</span></div>
+    <div class="meta-cell"><span class="mc-label">Audience</span><span class="mc-val">General Public · University Community</span></div>
+  </div>
+
+  <div class="client-row">
+    <div class="logo-pill">
+      <img src="design/tlvuniversity/telavivunilogo.png" alt="Tel Aviv University" loading="lazy" />
+    </div>
+    <p class="proj-overview" style="margin-bottom:0;">Print design for Tel Aviv University — a brochure for the ANU Museum of the Jewish People and a large-format infographic stand for the university's LGBTQ Centre.</p>
+  </div>
+
+  <p class="sh">ANU Museum Brochure</p>
+  <div class="img-block">
+    <img src="design/tlvuniversity/brochureANUMUSEUM.png" alt="ANU Museum Brochure" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+
+  <p class="sh">LGBTQ Centre — Infographic Stand</p>
+  <div class="img-block">
+    <img src="design/tlvuniversity/TLVINFOGRAPHICSTANDS.png" alt="Tel Aviv LGBTQ Centre Infographic Stand" onclick="openLightbox(this)" loading="lazy" />
+  </div>
+</div>
+</div>
+
+</div><!-- /page-design -->
+
+<div class="page" id="page-video">
+<nav class="page-nav" aria-label="Section navigation">
+  <button class="pn-back" data-page="home">Home</button>
+  <div class="pn-divider"></div>
+  <span class="pn-title">Video</span>
+  <ul class="pn-links" role="list">
+    <li><a href="#" data-page="interactive">Interactive</a></li>
+    <li><a href="#" data-page="design">Design</a></li>
+    <li><a href="#" data-page="video" class="pn-active">Video</a></li>
+    <li><a href="#" data-page="writing">Writing</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- ══════════════════════════════════
+     VIDEO
+══════════════════════════════════ -->
+<div class="chapter reveal" id="video" data-title="Video">
+  <div class="ch-header-row">
+    <span class="ch-num">03</span>
+    <h2 class="ch-title">Video</h2>
+    <p class="ch-sub">Animation, special effects, motion design &amp; AI experiments</p>
+  </div>
+</div>
+
+<!-- UP THERE — big feature -->
+<div class="vid-feature reveal" id="vid-upthere">
+  <div class="vf-meta">
+    <span class="vf-title">Up There</span>
+    <span class="vf-sub">Animation · Short Film</span>
+  </div>
+  <div class="vf-wrap">
+    <video controls preload="none">
+      <source src="animation/upthere-animation.mp4" type="video/mp4" />
+    </video>
+  </div>
+</div>
+
+<!-- BIGGER — big feature -->
+<div class="vid-feature reveal" id="vid-bigger">
+  <div class="vf-meta">
+    <span class="vf-title">Bigger</span>
+    <span class="vf-sub">Special Effects · VFX</span>
+  </div>
+  <div class="vf-wrap">
+    <video controls preload="none">
+      <source src="animation/biggerspecificalvfx.mp4" type="video/mp4" />
+    </video>
+  </div>
+</div>
+
+<!-- GANG GANG cut scene feature -->
+<div class="vid-feature reveal" id="vid-gangang">
+  <div class="vf-meta">
+    <span class="vf-title">GANG GANG</span>
+    <span class="vf-sub">Animation · Cut Scene</span>
+  </div>
+  <div class="vf-wrap">
+    <video controls preload="none" poster="interactive/ganggangpreview.png">
+      <source src="interactive/ganggang/cutscene1.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div style="padding: 16px 56px 24px;">
+    <a class="pl fill" href="#gangang" data-page="interactive" data-anchor="gangang">View Full Project ↗</a>
+  </div>
+</div>
+
+</div><!-- /page-video -->
+
+<div class="page" id="page-writing">
+<nav class="page-nav" aria-label="Section navigation">
+  <button class="pn-back" data-page="home">Home</button>
+  <div class="pn-divider"></div>
+  <span class="pn-title">Writing</span>
+  <ul class="pn-links" role="list">
+    <li><a href="#" data-page="interactive">Interactive</a></li>
+    <li><a href="#" data-page="design">Design</a></li>
+    <li><a href="#" data-page="video">Video</a></li>
+    <li><a href="#" data-page="writing" class="pn-active">Writing</a></li>
+    <li><a href="#" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- ══════════════════════════════════
+     WRITING
+══════════════════════════════════ -->
+<div class="chapter reveal" id="writing" data-title="Writing">
+  <div class="ch-header-row">
+    <span class="ch-num">04</span>
+    <h2 class="ch-title">Writing</h2>
+    <p class="ch-sub">Academic papers, seminars &amp; critical research — 06 papers</p>
+  </div>
+</div>
+
+<div class="sec" style="padding-top:0;padding-bottom:72px;">
+  <p class="writing-intro reveal">A collection of seminars, research projects, and academic papers — exploring film, gender, media representation, and cultural theory.</p>
+  <div>
+    <a class="w-row reveal" href="writing/Glorification and Exclusion in the Housewives of Modern Family.pdf" target="_blank" rel="noopener">
+      <span class="w-n">01</span><span class="w-t">Glorification and Exclusion in the Housewives of Modern Family</span><span class="w-a">↗</span>
+    </a>
+    <a class="w-row reveal" href="writing/Miss Lonelyhearts and Loneliness in the City.pdf" target="_blank" rel="noopener">
+      <span class="w-n">02</span><span class="w-t">Miss Lonelyhearts and Loneliness in the City</span><span class="w-a">↗</span>
+    </a>
+    <a class="w-row reveal" href="writing/Cognitive Decline as Experienced in The Father (2020) and Vortex (2021).pdf" target="_blank" rel="noopener">
+      <span class="w-n">03</span><span class="w-t">Cognitive Decline as Experienced in The Father (2020) and VoRtex (2021)</span><span class="w-a">↗</span>
+    </a>
+    <a class="w-row reveal" href="writing/The Portrayal of Immigrants and Their Integration into American and Israeli Society as Part of the National Family Modern Family and Nevsu.pdf" target="_blank" rel="noopener">
+      <span class="w-n">04</span><span class="w-t">The Portrayal of Immigrants and Their Integration into American and Israeli Society as Part of the National Family</span><span class="w-a">↗</span>
+    </a>
+    <a class="w-row reveal" href="writing/Mama, Welcome To the 60s- Nostalgia and Change in Hairspray (1988) and Hairspray (2007).pdf" target="_blank" rel="noopener">
+      <span class="w-n">05</span><span class="w-t">Mama, Welcome To the 60s: Nostalgia and Change in Hairspray (1988) and Hairspray (2007)</span><span class="w-a">↗</span>
+    </a>
+    <a class="w-row reveal" href="writing/The Patriarchal Ideology of Barbie.pdf" target="_blank" rel="noopener">
+      <span class="w-n">06</span><span class="w-t">The Patriarchal Ideology of Barbie</span><span class="w-a">↗</span>
+    </a>
+  </div>
+</div>
+
+</div><!-- /page-writing -->
+
+<!-- CONTACT -->
+<div class="page" id="page-contact">
+<nav class="page-nav" aria-label="Section navigation">
+  <button class="pn-back" data-page="home">Home</button>
+  <div class="pn-divider"></div>
+  <span class="pn-title">Contact</span>
+  <ul class="pn-links" role="list">
+    <li><a href="#" data-page="interactive">Interactive</a></li>
+    <li><a href="#" data-page="design">Design</a></li>
+    <li><a href="#" data-page="video">Video</a></li>
+    <li><a href="#" data-page="writing">Writing</a></li>
+    <li><a href="#" data-page="contact" class="pn-active">Contact</a></li>
+  </ul>
+</nav>
+<div id="contact">
+  <h2 class="c-big reveal">Get<br><em>in touch.</em></h2>
+  <p class="c-sub reveal">From interactive experiences to branding and marketing strategy, I'm always excited to bring ideas to life. Tell me about your project.</p>
+  <form class="c-form reveal" action="mailto:omerpolicker@gmail.com" method="post" enctype="text/plain" aria-label="Contact form">
+    <div class="c-form-row">
+      <div class="c-field">
+        <label class="c-label" for="cf-name">Name</label>
+        <input class="c-input" type="text" id="cf-name" name="Name" placeholder="Your name" required />
+      </div>
+      <div class="c-field">
+        <label class="c-label" for="cf-email">Email</label>
+        <input class="c-input" type="email" id="cf-email" name="Email" placeholder="your@email.com" required />
+      </div>
+    </div>
+    <div class="c-field">
+      <label class="c-label" for="cf-phone">Phone (optional)</label>
+      <input class="c-input" type="tel" id="cf-phone" name="Phone" placeholder="+972 XX-XXX-XXXX" />
+    </div>
+    <div class="c-field">
+      <label class="c-label" for="cf-msg">Message</label>
+      <textarea class="c-input c-textarea" id="cf-msg" name="Message" placeholder="Tell me about your project..." rows="5" required></textarea>
+    </div>
+    <button class="c-submit" type="submit">Send Message</button>
+  </form>
+  <div class="c-links reveal">
+    <a class="c-link" href="mailto:omerpolicker@gmail.com">omerpolicker@gmail.com</a>
+    <a class="c-link" href="https://omerpolicker.itch.io" target="_blank" rel="noopener">Itch.io</a>
+    <a class="c-link" href="https://www.linkedin.com/in/omer-policker" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div>
+
+<footer role="contentinfo">
+  <span>© 2025 Omer Policker</span>
+  <a href="#" data-page="home">Back to top ↑</a>
+</footer>
+
+</div><!-- /page-contact -->
+
+<script>
+  /* ===========================================
+     PAGE ROUTER
+  =========================================== */
+  const ANCHOR_PAGE = {
+    gangang:'interactive', melancholypocket:'interactive', midas:'interactive',
+    begin2grow:'interactive', dorothy:'interactive',
+    englishcoach:'design', jhmedical:'design', logos:'design',
+    print:'design', posters:'design', tlv:'design',
+    interactive:'interactive', design:'design', video:'video',
+    writing:'writing', contact:'contact',
+    'vid-upthere':'video', 'vid-bigger':'video'
+  };
+
+  // Page titles & meta descriptions for SPA routing
+  const PAGE_META = {
+    home:        { title: 'Omer Policker — Digital Media Designer & Creative Technologist | Tel Aviv', desc: 'Portfolio of Omer Policker — Digital Media Designer & Creative Technologist based in Tel Aviv. Games, interactive documentaries, brand identity, video, and UX/UI design.' },
+    interactive: { title: 'Interactive Work — Omer Policker', desc: 'Games, interactive documentaries, browser experiences, and UX prototypes by Omer Policker.' },
+    design:      { title: 'Design — Omer Policker', desc: 'Brand identity, marketing strategy, print design, posters, and client campaigns by Omer Policker.' },
+    video:       { title: 'Video — Omer Policker', desc: 'Animation, special effects, motion design, and short films by Omer Policker.' },
+    writing:     { title: 'Writing — Omer Policker', desc: 'Academic papers and critical research on film, gender, and media representation by Omer Policker.' },
+    contact:     { title: 'Contact Omer Policker — Digital Media Designer', desc: 'Get in touch with Omer Policker — available for roles in digital media, UX/UI, marketing, and creative development.' }
+  };
+
+  function switchPage(pageId, anchor) {
+    const target = document.getElementById('page-' + pageId);
+    if (!target) return;
+
+    // Update hidden attribute for screen reader accessibility
+    document.querySelectorAll('.page').forEach(p => {
+      p.classList.remove('active');
+      p.setAttribute('aria-hidden', 'true');
+    });
+    target.classList.add('active');
+    target.setAttribute('aria-hidden', 'false');
+
+    window.scrollTo(0, 0);
+
+    // Update <title> and meta description for SPA navigation
+    const meta = PAGE_META[pageId] || PAGE_META.home;
+    document.title = meta.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', meta.desc);
+
+    // Trigger reveal animations for newly visible elements
+    target.querySelectorAll('.reveal:not(.in)').forEach(el => {
+      setTimeout(() => el.classList.add('in'), 60);
+    });
+
+    if (anchor) {
+      setTimeout(() => {
+        const el = document.getElementById(anchor);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 80);
+    }
+
+    history.pushState(null, '', '#' + pageId);
+
+    // Recalculate hero letter positions when returning home
+    if (pageId === 'home') window.dispatchEvent(new Event('resize'));
+
+    // Move keyboard focus to page heading (accessibility)
+    setTimeout(() => {
+      const heading = target.querySelector('h1, h2, .ch-title');
+      if (heading) {
+        heading.setAttribute('tabindex', '-1');
+        heading.focus({ preventScroll: true });
+      }
+    }, 120);
+  }
+
+  // Global click handler for all [data-page] elements
+  document.addEventListener('click', function(e) {
+    const trigger = e.target.closest('[data-page]');
+    if (!trigger) return;
+    e.preventDefault();
+    const pageId = trigger.dataset.page;
+    const anchor = trigger.dataset.anchor || null;
+    if (pageId) switchPage(pageId, anchor);
+  });
+
+  // Handle initial hash
+  (function() {
+    const hash = location.hash.slice(1);
+    let startPage = 'home';
+    let startAnchor = null;
+    if (hash) {
+      if (document.getElementById('page-' + hash)) {
+        startPage = hash;
+      } else if (ANCHOR_PAGE[hash]) {
+        startPage = ANCHOR_PAGE[hash];
+        startAnchor = hash;
+      }
+    }
+    // Set aria-hidden on all pages, then reveal the active one
+    document.querySelectorAll('.page').forEach(p => {
+      p.classList.remove('active');
+      p.setAttribute('aria-hidden', 'true');
+    });
+    const activePage = document.getElementById('page-' + startPage);
+    if (activePage) {
+      activePage.classList.add('active');
+      activePage.setAttribute('aria-hidden', 'false');
+      activePage.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    }
+    // Set initial page title
+    const initMeta = PAGE_META[startPage] || PAGE_META.home;
+    document.title = initMeta.title;
+    if (startAnchor) {
+      setTimeout(() => {
+        const el = document.getElementById(startAnchor);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  })();
+
+  /* ===========================================
+     SCROLL REVEAL
+  =========================================== */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.05 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* LIGHTBOX */
+  const lb    = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  function openLightbox(img) {
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  function closeLightbox() {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(() => { lbImg.src = ''; }, 280);
+  }
+
+  /* HERO NAME SPRING PHYSICS */
+  (function() {
+    const chars = Array.from(document.querySelectorAll('.hero-char'));
+    if (!chars.length) return;
+
+    const states = chars.map(() => ({ x: 0, y: 0, vx: 0, vy: 0, sx: 0, sy: 0 }));
+    let origPos = null;
+    let mouseX = -9999, mouseY = -9999;
+    let dragging = null;
+
+    const RADIUS    = 200;
+    const PULL      = 0.42;
+    const STIFFNESS = 0.09;
+    const DAMPING   = 0.73;
+
+    function calcOrigPos() {
+      chars.forEach(c => { c.style.transform = ''; });
+      origPos = chars.map(c => {
+        const r = c.getBoundingClientRect();
+        return { cx: r.left + r.width / 2 + window.scrollX,
+                 cy: r.top  + r.height / 2 + window.scrollY };
+      });
+      chars.forEach((c, i) => {
+        const s = states[i];
+        c.style.transform = 'translate(' + s.x.toFixed(2) + 'px, ' + s.y.toFixed(2) + 'px)';
+      });
+    }
+
+    window.addEventListener('resize', () => { origPos = null; });
+
+    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+
+    chars.forEach((char, i) => {
+      char.addEventListener('mousedown', e => { dragging = i; e.preventDefault(); });
+    });
+    document.addEventListener('mouseup', () => { dragging = null; });
+
+    function tick() {
+      if (!origPos) calcOrigPos();
+      const sx = window.scrollX, sy = window.scrollY;
+      chars.forEach((char, i) => {
+        const s    = states[i];
+        const orig = origPos[i];
+        const ocx  = orig.cx - sx;
+        const ocy  = orig.cy - sy;
+        let targetX = 0, targetY = 0;
+
+        if (dragging === i) {
+          targetX = mouseX - ocx;
+          targetY = mouseY - ocy;
+          s.x = targetX; s.y = targetY;
+          s.vx = 0; s.vy = 0;
+        } else {
+          const dx   = mouseX - ocx;
+          const dy   = mouseY - ocy;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < RADIUS && dist > 0.5) {
+            const factor = (1 - dist / RADIUS) * PULL;
+            targetX = dx * factor;
+            targetY = dy * factor;
+          }
+          const ax = (targetX - s.x) * STIFFNESS;
+          const ay = (targetY - s.y) * STIFFNESS;
+          s.vx = (s.vx + ax) * DAMPING;
+          s.vy = (s.vy + ay) * DAMPING;
+          s.x += s.vx;
+          s.y += s.vy;
+        }
+
+        const buildRate = 0.08;
+        const decayRate = 0.028;
+        const rateX = Math.abs(s.vx) > Math.abs(s.sx) ? buildRate : decayRate;
+        const rateY = Math.abs(s.vy) > Math.abs(s.sy) ? buildRate : decayRate;
+        s.sx += (s.vx - s.sx) * rateX;
+        s.sy += (s.vy - s.sy) * rateY;
+
+        const skewX    = Math.max(-55, Math.min(55, s.sx * 7));
+        const stretchX = 1 + Math.abs(s.sx) * 0.22;
+        const stretchY = Math.max(0.45, 1 - Math.abs(s.sx) * 0.07 + Math.abs(s.sy) * 0.09);
+        char.style.transform = 'translate(' + s.x.toFixed(2) + 'px, ' + s.y.toFixed(2) + 'px) skewX(' + skewX.toFixed(2) + 'deg) scaleX(' + stretchX.toFixed(3) + ') scaleY(' + stretchY.toFixed(3) + ')';
+
+        const smearSpeed = Math.sqrt(s.sx * s.sx + s.sy * s.sy);
+        if (smearSpeed > 0.15) {
+          const tx     = (-s.sx * 5).toFixed(1);
+          const ty     = (-s.sy * 5).toFixed(1);
+          const bloom  = Math.min(smearSpeed * 8, 72);
+          const spread = Math.min(smearSpeed * 3.5, 28);
+          char.style.textShadow =
+            (parseFloat(tx) - 6).toFixed(1) + 'px ' + ty + 'px ' + spread + 'px rgba(255,20,80,0.95),' +
+            (parseFloat(tx) + 6).toFixed(1) + 'px ' + ty + 'px ' + spread + 'px rgba(30,100,255,0.95),' +
+            tx + 'px ' + ty + 'px ' + bloom + 'px rgba(109,76,255,0.35)';
+        } else {
+          char.style.textShadow = '';
+        }
+      });
+      requestAnimationFrame(tick);
+    }
+    tick();
+  })();
+
+  /* WORK HOVER PREVIEW */
+  (function() {
+    const preview = document.getElementById('work-preview');
+    const wpImg   = document.getElementById('wp-img');
+    const items   = document.querySelectorAll('.work-item[data-preview]');
+    let curX = 0, curY = 0, rafId = null;
+    let targetX = 0, targetY = 0;
+
+    function lerp(a, b, t) { return a + (b - a) * t; }
+
+    function animatePreview() {
+      curX = lerp(curX, targetX, 0.1);
+      curY = lerp(curY, targetY, 0.1);
+      const pw = preview.offsetWidth  || 320;
+      const ph = preview.offsetHeight || 240;
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const gap = 24;
+      const x  = curX + gap + pw > vw ? curX - gap - pw : curX + gap;
+      const y  = curY - 80 + ph > vh ? curY - ph - gap  : curY - 80;
+      preview.style.transform = 'translate(' + Math.max(8,x) + 'px, ' + Math.max(8,y) + 'px) scale(1)';
+      rafId = requestAnimationFrame(animatePreview);
+    }
+
+    document.addEventListener('mousemove', e => { targetX = e.clientX; targetY = e.clientY; });
+
+    items.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        const src = item.dataset.preview;
+        if (!src) return;
+        wpImg.src = src;
+        preview.classList.add('visible');
+        curX = targetX; curY = targetY;
+        if (!rafId) animatePreview();
+      });
+      item.addEventListener('mouseleave', () => {
+        preview.classList.remove('visible');
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      });
+    });
+  })();
+
+  /* FILTER */
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const workItems   = document.querySelectorAll('.work-item[data-cat]');
+
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => { p.classList.remove('active'); p.setAttribute('aria-pressed', 'false'); });
+      pill.classList.add('active');
+      pill.setAttribute('aria-pressed', 'true');
+      const filter = pill.dataset.filter;
+      let count = 1;
+      workItems.forEach(item => {
+        const show = filter === 'all' || item.dataset.cat === filter;
+        item.style.display = show ? 'grid' : 'none';
+        item.style.opacity = show ? '1' : '0';
+        if (show) {
+          item.querySelector('.wi-num').textContent = String(count).padStart(2, '0');
+          count++;
+        }
+      });
+    });
+  });
+
+
+  /* ===========================================
+     COLLAPSIBLE PROJECTS (open by default)
+  =========================================== */
+  (function() {
+
+    function openItem(el, body, inner, tocBtn) {
+      el.classList.add('proj-open');
+      // Animate to scrollHeight, then release to 'none' so images/videos never clip
+      body.style.maxHeight = inner.scrollHeight + 'px';
+      body.addEventListener('transitionend', function onEnd() {
+        if (el.classList.contains('proj-open')) body.style.maxHeight = 'none';
+        body.removeEventListener('transitionend', onEnd);
+      });
+      if (tocBtn) tocBtn.classList.add('toc-open');
+      var h = el.querySelector('.proj-header');
+      if (h) h.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeItem(el, body, inner, tocBtn) {
+      // Snap back to scrollHeight first so the collapse animation works from a fixed value
+      body.style.maxHeight = inner.scrollHeight + 'px';
+      requestAnimationFrame(function() {
+        el.classList.remove('proj-open');
+        body.style.maxHeight = '0';
+      });
+      if (tocBtn) tocBtn.classList.remove('toc-open');
+      var h = el.querySelector('.proj-header');
+      if (h) h.setAttribute('aria-expanded', 'false');
+    }
+
+    function toggleItem(el, body, inner, tocBtn) {
+      if (el.classList.contains('proj-open')) closeItem(el, body, inner, tocBtn);
+      else openItem(el, body, inner, tocBtn);
+    }
+
+    // --- Collapsible for .project-wrap elements ---
+    function initProjectWrap(wrap) {
+      var project = wrap.querySelector('.project');
+      if (!project) return null;
+      var eyebrow = project.querySelector('.proj-eyebrow');
+      var title   = project.querySelector('.proj-title');
+      if (!title) return null;
+
+      var header = document.createElement('div');
+      header.className = 'proj-header';
+      header.setAttribute('tabindex', '0');
+      header.setAttribute('role', 'button');
+      header.setAttribute('aria-expanded', 'true');
+
+      header.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); header.click(); }
+      });
+
+      var left = document.createElement('div');
+      if (eyebrow) left.appendChild(eyebrow);
+      left.appendChild(title);
+
+      var chevron = document.createElement('div');
+      chevron.className = 'proj-chevron';
+      chevron.innerHTML = '&#8595;';
+
+      header.appendChild(left);
+      header.appendChild(chevron);
+      project.insertBefore(header, project.firstElementChild);
+
+      var inner = document.createElement('div');
+      inner.className = 'proj-body-inner';
+      while (project.children[1]) {
+        inner.appendChild(project.children[1]);
+      }
+      var body = document.createElement('div');
+      body.className = 'proj-body';
+      body.appendChild(inner);
+      project.appendChild(body);
+
+      header.addEventListener('click', function() {
+        toggleItem(wrap, body, inner, null);
+      });
+
+      var label = title.textContent.replace(/\s+/g, ' ').trim();
+
+      // Start fully expanded — use 'none' so images/videos never get clipped
+      wrap.classList.add('proj-open');
+      body.style.maxHeight = 'none';
+      header.setAttribute('aria-expanded', 'true');
+
+      return { el: wrap, body: body, inner: inner, label: label, scrollTarget: project, tocBtn: null };
+    }
+
+    // --- Collapsible for .vid-feature elements ---
+    function initVidFeature(vf) {
+      var meta  = vf.querySelector('.vf-meta');
+      var vwrap = vf.querySelector('.vf-wrap');
+      if (!meta || !vwrap) return null;
+
+      var titleEl = vf.querySelector('.vf-title');
+      var subEl   = vf.querySelector('.vf-sub');
+      var label   = titleEl ? titleEl.textContent.trim() : 'Video';
+
+      var header = document.createElement('div');
+      header.className = 'vf-header';
+
+      var left = document.createElement('div');
+      left.className = 'vf-header-left';
+      if (titleEl) left.appendChild(titleEl);
+      if (subEl)   left.appendChild(subEl);
+
+      var chevron = document.createElement('div');
+      chevron.className = 'proj-chevron';
+      chevron.innerHTML = '&#8595;';
+
+      header.appendChild(left);
+      header.appendChild(chevron);
+      meta.replaceWith(header);
+
+      var inner = document.createElement('div');
+      inner.className = 'proj-body-inner';
+      inner.style.paddingTop = '0';
+      vwrap.parentNode.insertBefore(inner, vwrap);
+      // Collect vf-wrap AND all following siblings (e.g. link buttons)
+      var toMove = [];
+      var cur = vwrap;
+      while (cur) { toMove.push(cur); cur = cur.nextElementSibling; }
+      toMove.forEach(function(el) { inner.appendChild(el); });
+
+      var body = document.createElement('div');
+      body.className = 'vf-body';
+      inner.parentNode.insertBefore(body, inner);
+      body.appendChild(inner);
+
+      header.addEventListener('click', function() {
+        if (vf.classList.contains('proj-open')) {
+          vf.classList.remove('proj-open');
+          body.style.maxHeight = inner.scrollHeight + 'px';
+          requestAnimationFrame(function() { body.style.maxHeight = '0'; });
+        } else {
+          vf.classList.add('proj-open');
+          body.style.maxHeight = inner.scrollHeight + 'px';
+          body.addEventListener('transitionend', function onEnd() {
+            if (vf.classList.contains('proj-open')) body.style.maxHeight = 'none';
+            body.removeEventListener('transitionend', onEnd);
+          });
+        }
+      });
+
+      // Start expanded
+      vf.classList.add('proj-open');
+      body.style.maxHeight = 'none';
+
+      return { el: vf, body: body, inner: inner, label: label, scrollTarget: header, tocBtn: null };
+    }
+
+    // --- Init each section page ---
+    var interactivePage = document.getElementById('page-interactive');
+    if (interactivePage) {
+      Array.from(interactivePage.querySelectorAll('.project-wrap')).forEach(initProjectWrap);
+    }
+
+    var designPage = document.getElementById('page-design');
+    if (designPage) {
+      Array.from(designPage.querySelectorAll('.project-wrap')).forEach(initProjectWrap);
+    }
+
+    var videoPage = document.getElementById('page-video');
+    if (videoPage) {
+      Array.from(videoPage.querySelectorAll('.vid-feature')).forEach(initVidFeature);
+    }
+
+  })();
+
+
+
+
+  /* ===========================================
+     HOMEPAGE WORK-ITEM INLINE DRAWER
+  =========================================== */
+  (function() {
+    var homeWorkItems = document.querySelectorAll('#page-home .work-item[data-anchor]');
+
+    homeWorkItems.forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation(); // prevent global data-page handler
+
+        var anchor = item.dataset.anchor;
+        var sourceProject = document.getElementById(anchor);
+        if (!sourceProject) return;
+
+        // If the anchor points to a chapter/section (no project content), fall back to page switch
+        var hasContent = sourceProject.querySelector('.proj-title') || sourceProject.querySelector('.proj-body-inner');
+        if (!hasContent) {
+          var fallbackPage = item.dataset.page;
+          if (fallbackPage) switchPage(fallbackPage);
+          return;
+        }
+
+        // If already open for this item, close it
+        var next = item.nextElementSibling;
+        if (next && next.classList.contains('wi-drawer')) {
+          closeDrawer(next, item);
+          return;
+        }
+
+        // Close any other open drawers first
+        document.querySelectorAll('.wi-drawer').forEach(function(d) {
+          var prev = d.previousElementSibling;
+          if (prev) prev.classList.remove('wi-active');
+          d.remove();
+        });
+        document.querySelectorAll('.work-item.wi-active').forEach(function(i) {
+          i.classList.remove('wi-active');
+        });
+
+        // Build the drawer
+        var drawer = document.createElement('div');
+        drawer.className = 'wi-drawer';
+
+        var inner = document.createElement('div');
+        inner.className = 'wi-drawer-inner';
+
+        // Top row: title + close button
+        var top = document.createElement('div');
+        top.className = 'wi-drawer-top';
+
+        // Get the project title from the source
+        var srcTitle = sourceProject.querySelector('.proj-title') || sourceProject.querySelector('.vf-title');
+        var heading = document.createElement('div');
+        heading.className = 'wi-drawer-heading';
+        heading.innerHTML = srcTitle ? srcTitle.innerHTML : item.querySelector('.wi-title').textContent;
+        top.appendChild(heading);
+
+        var closeBtn = document.createElement('button');
+        closeBtn.className = 'wi-drawer-close';
+        closeBtn.textContent = 'Close ✕';
+        closeBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          closeDrawer(drawer, item);
+        });
+        top.appendChild(closeBtn);
+        inner.appendChild(top);
+
+        // Clone content from proj-body-inner (created by collapsible system)
+        var cloned;
+        var bodyInner = sourceProject.querySelector('.proj-body-inner');
+        if (bodyInner) {
+          cloned = bodyInner.cloneNode(true);
+        } else {
+          cloned = document.createElement('div');
+          var children = Array.from(sourceProject.children);
+          var startIdx = children.findIndex(function(c) { return c.classList.contains('proj-title'); });
+          if (startIdx !== -1) {
+            children.slice(startIdx + 1).forEach(function(child) {
+              cloned.appendChild(child.cloneNode(true));
+            });
+          }
+        }
+        if (cloned) {
+          cloned.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('in'); });
+          inner.appendChild(cloned);
+        }
+
+        drawer.appendChild(inner);
+        item.insertAdjacentElement('afterend', drawer);
+        item.classList.add('wi-active');
+
+        // Animate open: measure height, then set it
+        var h = drawer.scrollHeight;
+        requestAnimationFrame(function() {
+          drawer.style.maxHeight = h + 'px';
+          // After transition, allow drawer to grow (for lightbox etc)
+          setTimeout(function() { drawer.style.maxHeight = 'none'; drawer.style.overflow = 'visible'; }, 600);
+        });
+
+        // Scroll so the work item is near the top
+        setTimeout(function() {
+          item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 80);
+      });
+    });
+
+    function closeDrawer(drawer, workItem) {
+      // Pin current height first, then animate to 0
+      drawer.style.overflow = 'hidden';
+      drawer.style.maxHeight = drawer.scrollHeight + 'px';
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          drawer.style.maxHeight = '0';
+        });
+      });
+      if (workItem) workItem.classList.remove('wi-active');
+      drawer.addEventListener('transitionend', function() { drawer.remove(); }, { once: true });
+    }
+  })();
+
+</script>
+</body>
+</html>
