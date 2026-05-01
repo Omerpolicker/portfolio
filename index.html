@@ -324,20 +324,6 @@
       background: rgba(109,76,255,0.05);
     }
     /* big ghosted section title in background */
-    .chapter::before {
-      content: attr(data-title);
-      position: absolute;
-      bottom: -0.15em;
-      left: 44px;
-      font-size: clamp(3.5rem, 10vw, 10rem);
-      font-weight: 900;
-      letter-spacing: -.06em;
-      line-height: 1;
-      color: rgba(109,76,255,0.10);
-      pointer-events: none;
-      user-select: none;
-      white-space: nowrap;
-    }
     /* accent top stripe */
     .chapter::after {
       content: '';
@@ -346,10 +332,12 @@
       height: 2px;
       background: linear-gradient(90deg, var(--accent), transparent 55%);
     }
-    .ch-header-row { display: flex; align-items: baseline; gap: 18px; position: relative; z-index: 1; }
+    .ch-header-row { display: flex; flex-direction: column; gap: 10px; position: relative; z-index: 1; }
     .ch-num { font-size: .58rem; color: var(--yellow); letter-spacing: .18em; text-transform: uppercase; flex-shrink: 0; font-weight: 700; }
-    .ch-title { font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; letter-spacing: -.03em; }
-    .ch-sub { font-size: .75rem; font-weight: 300; color: var(--mid); margin-left: auto; max-width: 320px; text-align: right; line-height: 1.65; }
+    .ch-title { font-size: clamp(2.8rem, 6.5vw, 9rem); font-weight: 900; line-height: .92; letter-spacing: .01em; white-space: nowrap; }
+    .ch-char { display: inline-block; will-change: transform; cursor: grab; }
+    .ch-char:active { cursor: grabbing; }
+    .ch-sub { font-size: .75rem; font-weight: 300; color: var(--mid); max-width: 480px; text-align: left; line-height: 1.65; }
     .ch-desc { font-size: .82rem; font-weight: 300; color: var(--mid); max-width: 500px; margin-top: 16px; line-height: 1.7; position: relative; z-index: 1; }
 
     /* CASE STUDY PROJECT */
@@ -370,8 +358,8 @@
     .mc-val { font-size: .78rem; font-weight: 300; color: var(--ink); line-height: 1.45; }
 
     /* COVER */
-    .proj-cover { height: 300px; overflow: hidden; margin-bottom: 24px; background: var(--card); display: flex; align-items: center; justify-content: center; padding: 40px; }
-    .proj-cover img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; transition: transform .6s ease; }
+    .proj-cover { height: 260px; overflow: hidden; margin-bottom: 24px; background: transparent; display: flex; align-items: center; justify-content: center; padding: 40px; }
+    .proj-cover img { max-width: 55%; max-height: 60%; object-fit: contain; display: block; transition: transform .6s ease; }
     .proj-cover:hover img { transform: scale(1.04); }
 
     /* OVERVIEW */
@@ -457,8 +445,7 @@
 
     /* CONTACT */
     #contact { padding: 52px 56px; }
-    .c-big { font-size: clamp(2.8rem, 6.5vw, 7rem); font-weight: 700; letter-spacing: -.04em; line-height: .98; margin-bottom: 18px; }
-    .c-big em { font-style: italic; font-weight: 300; color: var(--mid); }
+    .c-big { font-size: clamp(2.8rem, 6.5vw, 9rem); font-weight: 900; letter-spacing: .01em; line-height: .92; margin-bottom: 18px; white-space: nowrap; }
     .c-sub { font-size: .88rem; font-weight: 300; line-height: 1.65; color: var(--mid); max-width: 460px; margin-bottom: 28px; }
     .c-form { display: flex; flex-direction: column; gap: 16px; max-width: 560px; margin-bottom: 40px; }
     .c-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -869,7 +856,7 @@
 
 <!-- HOME CONTACT -->
 <div id="contact" style="padding: 52px 56px; border-top: 1px solid var(--line);">
-  <h2 class="c-big reveal">Get<br><em>in touch.</em></h2>
+  <h2 class="c-big ch-title reveal"><span class="ch-char">C</span><span class="ch-char">o</span><span class="ch-char">n</span><span class="ch-char">t</span><span class="ch-char">a</span><span class="ch-char">c</span><span class="ch-char">t</span></h2>
   <p class="c-sub reveal">From interactive experiences to branding and marketing strategy, I'm always excited to bring ideas to life. Tell me about your project.</p>
   <form class="c-form reveal" action="mailto:omerpolicker@gmail.com" method="post" enctype="text/plain" aria-label="Contact form">
     <div class="c-form-row">
@@ -920,7 +907,7 @@
 <div class="chapter reveal" id="interactive" data-title="Interactive">
   <div class="ch-header-row">
     <span class="ch-num">01</span>
-    <h2 class="ch-title">Interactive</h2>
+    <h2 class="ch-title"><span class="ch-char">I</span><span class="ch-char">n</span><span class="ch-char">t</span><span class="ch-char">e</span><span class="ch-char">r</span><span class="ch-char">a</span><span class="ch-char">c</span><span class="ch-char">t</span><span class="ch-char">i</span><span class="ch-char">v</span><span class="ch-char">e</span></h2>
     <p class="ch-sub">Games, interactive documentaries, browser experiences &amp; UX prototypes</p>
   </div>
 </div>
@@ -947,7 +934,7 @@
   </div>
 
   <div class="proj-cover">
-    <img src="interactive/ganggang/gangganglogo.png" alt="GANGANG" loading="lazy" />
+    <img src="homepage/gangganglogo.png" alt="GANGANG" loading="lazy" />
   </div>
 
   <p class="proj-overview">2D action game where the player disguises their character to arrest gangsters and save the town. Won 1st Place at the 2025 TAU Game Jam. I designed the full UI/UX and directed and animated both original cut scenes.</p>
@@ -1021,7 +1008,7 @@
   </div>
 
   <div class="proj-cover">
-    <img src="interactive/melancolypocket/melancholypocketlogo.png" alt="Melancholy Pocket" loading="lazy" />
+    <img src="homepage/melancholypocketlogo.png" alt="Melancholy Pocket" loading="lazy" />
   </div>
 
   <p class="proj-overview">An interactive documentary preserving the memory of the old Israeli Broadcast Television building in Jerusalem. Visitors explore personal histories, footage, and objects through an immersive web interface. How does a building's memory live on when the building is gone?</p>
@@ -1088,7 +1075,7 @@
   </div>
 
   <div class="proj-cover">
-    <img src="interactive/kingmidas/kingmidaslogo.png" alt="King Midas" loading="lazy" />
+    <img src="homepage/kingmidaslogo.png" alt="King Midas" loading="lazy" />
   </div>
 
   <p class="proj-overview">An interactive story game built in RenPy, following the myth of King Midas. Branching dialogue and player choices explore greed, consequence, and regret. Now part of the TAU Digital Media BA curriculum.</p>
@@ -1143,7 +1130,7 @@
   </div>
 
   <div class="proj-cover">
-    <img src="interactive/begin2grow/Begintogrowlogo.png" alt="Begin To Grow" loading="lazy" />
+    <img src="homepage/Begintogrowlogo.png" alt="Begin To Grow" loading="lazy" />
   </div>
 
   <p class="proj-overview">A Figma UX prototype for a plant care app for curious beginners. Helps users discover plants, build confidence through guided routines, and develop lasting care habits.</p>
@@ -1247,7 +1234,7 @@
 <div class="chapter reveal" id="design" data-title="Design">
   <div class="ch-header-row">
     <span class="ch-num">02</span>
-    <h2 class="ch-title">Design</h2>
+    <h2 class="ch-title"><span class="ch-char">D</span><span class="ch-char">e</span><span class="ch-char">s</span><span class="ch-char">i</span><span class="ch-char">g</span><span class="ch-char">n</span></h2>
     <p class="ch-sub">Brand identity, marketing strategy, print, posters &amp; client campaigns</p>
   </div>
 </div>
@@ -1256,7 +1243,7 @@
 <div class="project-wrap">
 <div class="project reveal" id="englishcoach">
   <div class="proj-eyebrow"><span class="proj-num">EC</span></div>
-  <h2 class="proj-title"><em>English</em><br>Coach</h2>
+  <h2 class="proj-title"><em>English</em> Coach</h2>
 
   <div class="meta-strip">
     <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">Marketing &amp; Sales Specialist</span></div>
@@ -1440,7 +1427,7 @@
 <div class="project-wrap">
 <div class="project reveal" id="logos">
   <div class="proj-eyebrow"><span class="proj-num">03</span></div>
-  <h2 class="proj-title"><em>Logo</em><br>Design</h2>
+  <h2 class="proj-title"><em>Logo</em> Design</h2>
 
   <p class="proj-overview">Logo design and brand identity — from original mark creation to full rebranding. Each project begins with understanding the business's core identity: what it does, who it serves, and how it should feel on first contact.</p>
 
@@ -1508,7 +1495,7 @@
 <div class="project-wrap">
 <div class="project reveal" id="print">
   <div class="proj-eyebrow"><span class="proj-num">04</span></div>
-  <h2 class="proj-title">Print &amp;<br><em>Infographics</em></h2>
+  <h2 class="proj-title">Print &amp; <em>Infographics</em></h2>
 
   <p class="proj-overview">Print design spanning brochures and infographic publications — translating complex information into coherent layouts where every design decision is permanent.</p>
 
@@ -1555,7 +1542,7 @@
 <div class="project-wrap">
 <div class="project reveal" id="posters">
   <div class="proj-eyebrow"><span class="proj-num">05</span></div>
-  <h2 class="proj-title"><em>Poster</em><br>Design</h2>
+  <h2 class="proj-title"><em>Poster</em> Design</h2>
 
   <p class="proj-overview">Poster design for film and festival contexts — distilling a complete story into a single arresting visual moment. Composition, typographic hierarchy, and negative space all used toward that singular goal.</p>
 
@@ -1601,7 +1588,7 @@
 <div class="project-wrap">
 <div class="project reveal" id="tlv">
   <div class="proj-eyebrow"><span class="proj-num">06</span></div>
-  <h2 class="proj-title">Tel Aviv<br><em>University</em></h2>
+  <h2 class="proj-title">Tel Aviv <em>University</em></h2>
 
   <div class="meta-strip">
     <div class="meta-cell"><span class="mc-label">Client</span><span class="mc-val">Tel Aviv University</span></div>
@@ -1649,7 +1636,7 @@
 <div class="chapter reveal" id="video" data-title="Video">
   <div class="ch-header-row">
     <span class="ch-num">03</span>
-    <h2 class="ch-title">Video</h2>
+    <h2 class="ch-title"><span class="ch-char">V</span><span class="ch-char">i</span><span class="ch-char">d</span><span class="ch-char">e</span><span class="ch-char">o</span></h2>
     <p class="ch-sub">Animation, special effects, motion design &amp; AI experiments</p>
   </div>
 </div>
@@ -1717,7 +1704,7 @@
 <div class="chapter reveal" id="writing" data-title="Writing">
   <div class="ch-header-row">
     <span class="ch-num">04</span>
-    <h2 class="ch-title">Writing</h2>
+    <h2 class="ch-title"><span class="ch-char">W</span><span class="ch-char">r</span><span class="ch-char">i</span><span class="ch-char">t</span><span class="ch-char">i</span><span class="ch-char">n</span><span class="ch-char">g</span></h2>
     <p class="ch-sub">Academic papers, seminars &amp; critical research — 06 papers</p>
   </div>
 </div>
@@ -1763,7 +1750,7 @@
   </ul>
 </nav>
 <div id="contact">
-  <h2 class="c-big reveal">Get<br><em>in touch.</em></h2>
+  <h2 class="c-big ch-title reveal"><span class="ch-char">C</span><span class="ch-char">o</span><span class="ch-char">n</span><span class="ch-char">t</span><span class="ch-char">a</span><span class="ch-char">c</span><span class="ch-char">t</span></h2>
   <p class="c-sub reveal">From interactive experiences to branding and marketing strategy, I'm always excited to bring ideas to life. Tell me about your project.</p>
   <form class="c-form reveal" action="mailto:omerpolicker@gmail.com" method="post" enctype="text/plain" aria-label="Contact form">
     <div class="c-form-row">
@@ -1858,8 +1845,8 @@
 
     history.pushState(null, '', '#' + pageId);
 
-    // Recalculate hero letter positions when returning home
-    if (pageId === 'home') window.dispatchEvent(new Event('resize'));
+    // Recalculate letter positions (hero + chapter titles) on every page switch
+    window.dispatchEvent(new Event('resize'));
 
     // Move keyboard focus to page heading (accessibility)
     setTimeout(() => {
@@ -2045,6 +2032,80 @@
     tick();
   })();
 
+  /* CHAPTER TITLE SPRING PHYSICS */
+  (function() {
+    function initChapterSpring(chars) {
+      if (!chars.length) return;
+      const states = chars.map(() => ({ x: 0, y: 0, vx: 0, vy: 0, sx: 0, sy: 0 }));
+      let origPos = null;
+      let mouseX = -9999, mouseY = -9999;
+      let dragging = null;
+
+      const RADIUS = 200, PULL = 0.42, STIFFNESS = 0.09, DAMPING = 0.73;
+
+      function calcOrigPos() {
+        chars.forEach(c => { c.style.transform = ''; });
+        origPos = chars.map(c => {
+          const r = c.getBoundingClientRect();
+          return { cx: r.left + r.width / 2 + window.scrollX,
+                   cy: r.top  + r.height / 2 + window.scrollY };
+        });
+        chars.forEach((c, i) => {
+          const s = states[i];
+          c.style.transform = 'translate(' + s.x.toFixed(2) + 'px,' + s.y.toFixed(2) + 'px)';
+        });
+      }
+
+      window.addEventListener('resize', () => { origPos = null; });
+      document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+      chars.forEach((char, i) => {
+        char.addEventListener('mousedown', e => { dragging = i; e.preventDefault(); });
+      });
+      document.addEventListener('mouseup', () => { dragging = null; });
+
+      function tick() {
+        if (!origPos) calcOrigPos();
+        const sx = window.scrollX, sy = window.scrollY;
+        chars.forEach((char, i) => {
+          const s = states[i], orig = origPos[i];
+          const ocx = orig.cx - sx, ocy = orig.cy - sy;
+          let targetX = 0, targetY = 0;
+          if (dragging === i) {
+            targetX = mouseX - ocx; targetY = mouseY - ocy;
+            s.x = targetX; s.y = targetY; s.vx = 0; s.vy = 0;
+          } else {
+            const dx = mouseX - ocx, dy = mouseY - ocy;
+            const dist = Math.sqrt(dx*dx + dy*dy);
+            if (dist < RADIUS && dist > 0.5) {
+              const factor = (1 - dist / RADIUS) * PULL;
+              targetX = dx * factor; targetY = dy * factor;
+            }
+            const ax = (targetX - s.x) * STIFFNESS;
+            const ay = (targetY - s.y) * STIFFNESS;
+            s.vx = (s.vx + ax) * DAMPING; s.vy = (s.vy + ay) * DAMPING;
+            s.x += s.vx; s.y += s.vy;
+          }
+          const buildRate = 0.08, decayRate = 0.028;
+          s.sx += (s.vx - s.sx) * (Math.abs(s.vx) > Math.abs(s.sx) ? buildRate : decayRate);
+          s.sy += (s.vy - s.sy) * (Math.abs(s.vy) > Math.abs(s.sy) ? buildRate : decayRate);
+          const skewX = Math.max(-55, Math.min(55, s.sx * 7));
+          const stretchX = 1 + Math.abs(s.sx) * 0.22;
+          const stretchY = Math.max(0.45, 1 - Math.abs(s.sx) * 0.07 + Math.abs(s.sy) * 0.09);
+          char.style.transform = 'translate(' + s.x.toFixed(2) + 'px,' + s.y.toFixed(2) + 'px) skewX(' + skewX.toFixed(2) + 'deg) scaleX(' + stretchX.toFixed(3) + ') scaleY(' + stretchY.toFixed(3) + ')';
+          char.style.textShadow = '';
+        });
+        requestAnimationFrame(tick);
+      }
+      tick();
+    }
+
+    // One independent physics system per section title
+    document.querySelectorAll('.ch-title').forEach(function(title) {
+      var chars = Array.from(title.querySelectorAll('.ch-char'));
+      initChapterSpring(chars);
+    });
+  })();
+
   /* WORK HOVER PREVIEW */
   (function() {
     const preview = document.getElementById('work-preview');
@@ -2193,10 +2254,9 @@
 
       var label = title.textContent.replace(/\s+/g, ' ').trim();
 
-      // Start fully expanded — use 'none' so images/videos never get clipped
-      wrap.classList.add('proj-open');
-      body.style.maxHeight = 'none';
-      header.setAttribute('aria-expanded', 'true');
+      // Start closed
+      body.style.maxHeight = '0';
+      header.setAttribute('aria-expanded', 'false');
 
       return { el: wrap, body: body, inner: inner, label: label, scrollTarget: project, tocBtn: null };
     }
