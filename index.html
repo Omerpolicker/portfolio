@@ -124,8 +124,8 @@
       --bg:       #EDE9FF;          /* soft lavender background */
       --surface:  #FFFFFF;          /* card / panel surface */
       --ink:      #1E1633;          /* primary text (dark purple-black) */
-      --mid:      #6B6490;          /* muted text */
-      --faint:    #9B97B8;          /* very muted text */
+      --mid:      #1E1633;          /* muted text → matches ink */
+      --faint:    #1E1633;          /* very muted text → matches ink */
 
       /* ── Borders ── */
       --line:     #D5D0EE;          /* light purple border */
@@ -2144,8 +2144,9 @@
     });
   })();
 
-  /* WORK HOVER PREVIEW */
+  /* WORK HOVER PREVIEW — desktop only */
   (function() {
+    if (window.matchMedia('(hover: none)').matches) return; // skip touch devices
     const preview = document.getElementById('work-preview');
     const wpImg   = document.getElementById('wp-img');
     const items   = document.querySelectorAll('.work-item[data-preview]');
