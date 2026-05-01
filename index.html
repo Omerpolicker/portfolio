@@ -201,7 +201,7 @@
     .nav-cv:hover { background: var(--purple-h); }
 
     /* HERO */
-    #home { min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 110px 56px 72px; border-bottom: 2px solid var(--line); }
+    #home { min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; padding: 120px 56px 72px; border-bottom: 2px solid var(--line); }
     .hero-eye { display: none; }
     .hero-name { font-size: clamp(2.8rem, 6.5vw, 9rem); font-weight: 800; font-family: 'Unbounded', sans-serif; line-height: .92; letter-spacing: -.02em; white-space: nowrap; }
     .hero-name em { font-style: italic; font-weight: 300; color: var(--mid); }
@@ -463,7 +463,9 @@
 
     /* FOOTER */
     footer { display: flex; justify-content: space-between; align-items: center; padding: 24px 56px; font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); border-top: 1px solid var(--line); background: var(--bg); gap: 20px; }
-    .footer-left { display: flex; flex-direction: column; gap: 4px; }
+    .footer-left { display: flex; flex-direction: column; gap: 6px; }
+    .footer-logo-link { display: block; }
+    .footer-logo { height: 28px; width: auto; display: block; }
     .footer-name { font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: .6rem; color: var(--ink); letter-spacing: .05em; }
     .footer-copy { font-size: .55rem; color: var(--mid); }
     .footer-links { display: flex; gap: 24px; align-items: center; }
@@ -504,11 +506,12 @@
        PAGE SYSTEM (SPA)
     ═══════════════════════════════════════ */
     .page { display: none; }
-    .page.active { display: block; }
+    .page.active { display: block; padding-top: 77px; }
+    #page-home.active { padding-top: 0; }
 
     /* PAGE-LEVEL NAV (replaces main nav on section pages) */
     .page-nav {
-      position: sticky; top: 0; z-index: 500;
+      position: sticky; top: 77px; z-index: 400;
       display: flex; align-items: center; gap: 20px;
       padding: 14px 56px;
       background: rgba(245,241,255,.92); backdrop-filter: blur(20px);
@@ -696,8 +699,6 @@
 
 
 
-<div class="page active" id="page-home">
-<!-- NAV -->
 <nav aria-label="Main navigation">
   <a class="nav-logo" href="#" data-page="home">
     <img class="nav-logo-img" src="MYLOGO.svg" alt="Omer Policker logo" width="160" height="36" fetchpriority="high" />
@@ -711,6 +712,8 @@
     <li><a href="#contact" data-page="contact">Contact</a></li>
   </ul>
 </nav>
+
+<div class="page active" id="page-home">
 <!-- ══════════════════════════════════
      HOME
 ══════════════════════════════════ -->
@@ -892,18 +895,6 @@
 </div><!-- /page-home -->
 
 <div class="page" id="page-interactive">
-<nav class="page-nav" aria-label="Section navigation">
-  <button class="pn-back" data-page="home">Home</button>
-  <div class="pn-divider"></div>
-  <span class="pn-title">Interactive</span>
-  <ul class="pn-links" role="list">
-    <li><a href="#" data-page="interactive" class="pn-active">Interactive</a></li>
-    <li><a href="#" data-page="design">Design</a></li>
-    <li><a href="#" data-page="video">Video</a></li>
-    <li><a href="#" data-page="writing">Writing</a></li>
-    <li><a href="#" data-page="contact">Contact</a></li>
-  </ul>
-</nav>
 <!-- ══════════════════════════════════
      Interactive
 ══════════════════════════════════ -->
@@ -1219,18 +1210,6 @@
 </div><!-- /page-interactive -->
 
 <div class="page" id="page-design">
-<nav class="page-nav" aria-label="Section navigation">
-  <button class="pn-back" data-page="home">Home</button>
-  <div class="pn-divider"></div>
-  <span class="pn-title">Design</span>
-  <ul class="pn-links" role="list">
-    <li><a href="#" data-page="interactive">Interactive</a></li>
-    <li><a href="#" data-page="design" class="pn-active">Design</a></li>
-    <li><a href="#" data-page="video">Video</a></li>
-    <li><a href="#" data-page="writing">Writing</a></li>
-    <li><a href="#" data-page="contact">Contact</a></li>
-  </ul>
-</nav>
 <!-- ══════════════════════════════════
      DESIGN
 ══════════════════════════════════ -->
@@ -1621,18 +1600,6 @@
 </div><!-- /page-design -->
 
 <div class="page" id="page-video">
-<nav class="page-nav" aria-label="Section navigation">
-  <button class="pn-back" data-page="home">Home</button>
-  <div class="pn-divider"></div>
-  <span class="pn-title">Video</span>
-  <ul class="pn-links" role="list">
-    <li><a href="#" data-page="interactive">Interactive</a></li>
-    <li><a href="#" data-page="design">Design</a></li>
-    <li><a href="#" data-page="video" class="pn-active">Video</a></li>
-    <li><a href="#" data-page="writing">Writing</a></li>
-    <li><a href="#" data-page="contact">Contact</a></li>
-  </ul>
-</nav>
 <!-- ══════════════════════════════════
      VIDEO
 ══════════════════════════════════ -->
@@ -1689,18 +1656,6 @@
 </div><!-- /page-video -->
 
 <div class="page" id="page-writing">
-<nav class="page-nav" aria-label="Section navigation">
-  <button class="pn-back" data-page="home">Home</button>
-  <div class="pn-divider"></div>
-  <span class="pn-title">Writing</span>
-  <ul class="pn-links" role="list">
-    <li><a href="#" data-page="interactive">Interactive</a></li>
-    <li><a href="#" data-page="design">Design</a></li>
-    <li><a href="#" data-page="video">Video</a></li>
-    <li><a href="#" data-page="writing" class="pn-active">Writing</a></li>
-    <li><a href="#" data-page="contact">Contact</a></li>
-  </ul>
-</nav>
 <!-- ══════════════════════════════════
      WRITING
 ══════════════════════════════════ -->
@@ -1740,18 +1695,6 @@
 
 <!-- CONTACT -->
 <div class="page" id="page-contact">
-<nav class="page-nav" aria-label="Section navigation">
-  <button class="pn-back" data-page="home">Home</button>
-  <div class="pn-divider"></div>
-  <span class="pn-title">Contact</span>
-  <ul class="pn-links" role="list">
-    <li><a href="#" data-page="interactive">Interactive</a></li>
-    <li><a href="#" data-page="design">Design</a></li>
-    <li><a href="#" data-page="video">Video</a></li>
-    <li><a href="#" data-page="writing">Writing</a></li>
-    <li><a href="#" data-page="contact" class="pn-active">Contact</a></li>
-  </ul>
-</nav>
 <div id="contact">
   <h2 class="c-big ch-title reveal"><span class="ch-char">C</span><span class="ch-char">o</span><span class="ch-char">n</span><span class="ch-char">t</span><span class="ch-char">a</span><span class="ch-char">c</span><span class="ch-char">t</span></h2>
   <p class="c-sub reveal">From interactive experiences to branding and marketing strategy, I'm always excited to bring ideas to life. Tell me about your project.</p>
@@ -1787,7 +1730,9 @@
 
 <footer role="contentinfo">
   <div class="footer-left">
-    <span class="footer-name">Omer Policker</span>
+    <a href="#" data-page="home" class="footer-logo-link">
+      <img src="MYLOGO.svg" alt="Omer Policker" class="footer-logo" />
+    </a>
     <span class="footer-copy">© 2026 · Digital Media Designer</span>
   </div>
   <div class="footer-links">
@@ -1855,6 +1800,11 @@
     }
 
     history.pushState(null, '', '#' + pageId);
+
+    // Highlight active nav link
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === pageId);
+    });
 
     // Recalculate letter positions (hero + chapter titles) on every page switch
     window.dispatchEvent(new Event('resize'));
