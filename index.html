@@ -9,7 +9,7 @@
   <!-- ╚═══════════════════════════════╝ -->
 
   <!-- Core SEO -->
-  <meta name="description" content="Portfolio of Omer Policker — Digital Media Designer &amp; Creative Technologist based in Tel Aviv. Games, interactive documentaries, UX/UI, brand identity, video, and academic writing." />
+  <meta name="description" content="Portfolio of Omer Policker - Digital Media Designer &amp; Creative Technologist based in Tel Aviv. Games, interactive documentaries, UX/UI, brand identity, video, and academic writing." />
   <meta name="author" content="Omer Policker" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0e0b1c" />
@@ -17,14 +17,14 @@
 
   <!-- Open Graph (LinkedIn, Facebook, WhatsApp) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Omer Policker — Digital Media Designer &amp; Creative Technologist" />
+  <meta property="og:title" content="Omer Policker - Digital Media Designer &amp; Creative Technologist" />
   <meta property="og:description" content="Tel Aviv-based Digital Media Designer specialising in games, interactive documentaries, brand identity, video production, and UX/UI design." />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Omer Policker Portfolio" />
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Omer Policker — Digital Media Designer" />
+  <meta name="twitter:title" content="Omer Policker - Digital Media Designer" />
   <meta name="twitter:description" content="Tel Aviv-based Digital Media Designer: games, interactive docs, brand identity, video, UX/UI." />
 
   <!-- Font Performance: preconnect before the stylesheet link -->
@@ -58,7 +58,7 @@
       {
         "@type": "WebSite",
         "name": "Omer Policker Portfolio",
-        "description": "Portfolio of Omer Policker — Digital Media Designer & Creative Technologist",
+        "description": "Portfolio of Omer Policker - Digital Media Designer & Creative Technologist",
         "author": { "@id": "#omer-policker" }
       },
       {
@@ -67,7 +67,7 @@
         "author": { "@id": "#omer-policker" },
         "description": "3D action game where the player disguises their character to arrest gangsters and save the town. Winner of the 2025 Tel Aviv University Game Jam.",
         "dateCreated": "2025",
-        "award": "1st Place — TAU Game Jam 2025",
+        "award": "1st Place - TAU Game Jam 2025",
         "url": "https://www.youtube.com/watch?v=rqEtecTcLuQ"
       },
       {
@@ -93,11 +93,11 @@
         "author": { "@id": "#omer-policker" },
         "description": "Figma UX prototype for a plant care app designed for beginner plant owners, featuring personalised care routines and contextual guidance.",
         "dateCreated": "2024",
-        "genre": "UX Design — Mobile App Prototype"
+        "genre": "UX Design - Mobile App Prototype"
       },
       {
         "@type": "CreativeWork",
-        "name": "JHMedical — Brand Identity & Website",
+        "name": "JHMedical - Brand Identity & Website",
         "author": { "@id": "#omer-policker" },
         "description": "Full brand identity, website design and build, LinkedIn strategy, and marketing materials for JHMedical, a medical B2B company.",
         "dateCreated": "2024",
@@ -105,7 +105,7 @@
       },
       {
         "@type": "CreativeWork",
-        "name": "English Coach — Marketing & Growth",
+        "name": "English Coach - Marketing & Growth",
         "author": { "@id": "#omer-policker" },
         "description": "Led marketing strategy for English Coach, achieving 2,500% Instagram growth and 40% LinkedIn follower growth in eight months.",
         "dateCreated": "2024",
@@ -115,7 +115,7 @@
   }
   </script>
 
-  <title>Omer Policker — Digital Media Designer &amp; Creative Technologist | Tel Aviv</title>
+  <title>Omer Policker - Digital Media Designer &amp; Creative Technologist | Tel Aviv</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400&family=Unbounded:wght@800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -135,11 +135,11 @@
       --card:     #FFFFFF;          /* card background */
       --grid-c:   rgba(109,76,255,0.06);
 
-      /* ── Purple — structure / navigation / CTA ── */
+      /* ── Purple - structure / navigation / CTA ── */
       --purple:   #6D4CFF;
       --purple-h: #5A3EE6;
 
-      /* ── Yellow — sparingly: badges, hover highlights, emphasis ── */
+      /* ── Yellow - sparingly: badges, hover highlights, emphasis ── */
       --yellow:   #FFD84D;
       --yellow-h: #E6C243;
 
@@ -154,6 +154,67 @@
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      isolation: isolate;
+    }
+    /* GRAINY BLOBS */
+    .blob-cont {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: .35;
+    }
+    .blob-1 {
+      background: #a99be5;
+      width: 520px; height: 520px;
+      top: -100px; left: -80px;
+      animation: blob1 10s infinite ease;
+    }
+    .blob-2 {
+      background: #A07BFF;
+      width: 420px; height: 420px;
+      top: 30%; right: -60px;
+      animation: blob2 13s infinite ease;
+    }
+    .blob-3 {
+      background: #A07BFF;
+      width: 380px; height: 380px;
+      bottom: -80px; left: 35%;
+      animation: blob3 11s infinite linear;
+    }
+    @keyframes blob1 {
+      0%   { transform: translate(0,0)    scale(1);   }
+      33%  { transform: translate(80px,120px) scale(1.15); }
+      66%  { transform: translate(-40px,60px) scale(.9); }
+      100% { transform: translate(0,0)    scale(1);   }
+    }
+    @keyframes blob2 {
+      0%   { transform: translate(0,0)       scale(1.1); }
+      33%  { transform: translate(-100px,80px) scale(1);   }
+      66%  { transform: translate(-60px,-90px) scale(1.2); }
+      100% { transform: translate(0,0)       scale(1.1); }
+    }
+    @keyframes blob3 {
+      0%   { transform: translate(0,0)      scale(1);   }
+      33%  { transform: translate(120px,-60px) scale(1.3); }
+      66%  { transform: translate(-80px,40px)  scale(.85);}
+      100% { transform: translate(0,0)      scale(1);   }
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -999;
+      pointer-events: none;
+      background: #8C8C8C;
+      opacity: .28;
+      filter: url(#noiseFilter);
     }
 
     /* REVEAL */
@@ -233,11 +294,9 @@
     /* HERO TOOLS ICONS */
     .hero-tools { display: flex; flex-wrap: wrap; gap: 18px 20px; align-items: flex-start; }
     .tool-item { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 48px; }
-    .tool-icon { width: 32px; height: 32px; object-fit: contain; opacity: .68; transition: opacity .2s, transform .2s; display: block; }
-    .tool-item:hover .tool-icon { opacity: 1; transform: translateY(-3px); }
+    .tool-icon { width: 32px; height: 32px; object-fit: contain; opacity: .68; display: block; }
     .tool-name { font-size: .5rem; letter-spacing: .04em; text-align: center; color: var(--mid); white-space: nowrap; }
-    .tool-icon-badge { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--pill); border-radius: 7px; border: 1px solid var(--line); font-size: .48rem; font-weight: 700; color: var(--ink); text-align: center; transition: transform .2s; }
-    .tool-item:hover .tool-icon-badge { transform: translateY(-3px); }
+    .tool-icon-badge { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--pill); border-radius: 7px; border: 1px solid var(--line); font-size: .48rem; font-weight: 700; color: var(--ink); text-align: center; }
 
     /* FILTER ROW */
     .filter-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
@@ -308,7 +367,7 @@
     }
     .sn-dot.active::after { opacity: 1; color: var(--accent); }
 
-    /* CHAPTER HEADER — acts as a full section divider */
+    /* CHAPTER HEADER - acts as a full section divider */
     .chapter {
       display: flex;
       flex-direction: column;
@@ -506,7 +565,7 @@
        PAGE SYSTEM (SPA)
     ═══════════════════════════════════════ */
     .page { display: none; }
-    .page.active { display: block; padding-top: 77px; }
+    .page.active { display: block; padding-top: 77px; position: relative; z-index: 1; }
     #page-home.active { padding-top: 0; }
 
     /* PAGE-LEVEL NAV (replaces main nav on section pages) */
@@ -559,7 +618,7 @@
       border-bottom: 1px solid var(--line);
       user-select: none;
     }
-    .proj-header:hover .proj-chevron { background: rgba(109,76,255,0.14); border-color: var(--purple); color: var(--purple); }
+    .proj-header:hover .proj-chevron { background: rgba(109,76,255,0.18); }
     /* Scale down the huge title inside the header */
     .proj-header .proj-title {
       font-size: clamp(1.6rem, 2.8vw, 2.6rem);
@@ -567,13 +626,16 @@
     }
     .proj-header .proj-eyebrow { margin-bottom: 6px; }
     .proj-chevron {
-      width: 34px; height: 34px; border-radius: 50%;
-      border: 1.5px solid var(--line); flex-shrink: 0;
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 2px solid var(--purple); flex-shrink: 0;
       display: flex; align-items: center; justify-content: center;
-      font-size: .7rem; color: var(--mid); margin-top: 6px;
+      font-size: .95rem; color: var(--purple);
+      background: rgba(109,76,255,0.08);
+      margin-top: 4px;
       transition: transform .35s ease, background .2s, border-color .2s, color .2s;
     }
-    .proj-open .proj-chevron { transform: rotate(180deg); background: rgba(109,76,255,0.18); border-color: var(--purple); color: var(--purple); }
+    .proj-header:hover .proj-chevron { background: rgba(109,76,255,0.18); }
+    .proj-open .proj-chevron { transform: rotate(180deg); background: var(--purple); border-color: var(--purple); color: #fff; }
 
     .proj-body {
       max-height: 0;
@@ -645,7 +707,7 @@
     /* ===========================================
        ACCESSIBILITY & FOCUS
     =========================================== */
-    /* Keyboard focus ring — only shows on keyboard nav, not mouse */
+    /* Keyboard focus ring - only shows on keyboard nav, not mouse */
     :focus-visible {
       outline: 2px solid var(--purple);
       outline-offset: 3px;
@@ -699,6 +761,21 @@
 
 
 
+<div class="blob-cont" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <filter id="noiseFilter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"/>
+    <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+    <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+    <feBlend in="SourceGraphic" in2="monoNoise" mode="screen"/>
+  </filter>
+</svg>
+
 <nav aria-label="Main navigation">
   <a class="nav-logo" href="#" data-page="home">
     <img class="nav-logo-img" src="MYLOGO.svg" alt="Omer Policker logo" width="160" height="36" fetchpriority="high" />
@@ -733,7 +810,7 @@
     <div class="hero-right reveal rd1">
       <div class="badge-row">
         <span class="badge">🏆 Game Jam Winner 2025</span>
-        <span class="badge">MFA &amp; BA in Digital Media — Tel Aviv University</span>
+        <span class="badge">MFA &amp; BA in Digital Media - Tel Aviv University</span>
         <span class="badge">Built socials &amp; websites from scratch</span>
       </div>
       <div class="hero-tools">
@@ -779,7 +856,7 @@
         </div>
 
         <div class="tool-item">
-          <span class="tool-icon-badge">Ren'Py</span>
+          <span class="tool-icon-badge">RenPy</span>
           <span class="tool-name">RenPy</span>
         </div>
 
@@ -924,7 +1001,7 @@
     <div class="meta-cell"><span class="mc-label">Year</span><span class="mc-val">2025</span></div>
     <div class="meta-cell"><span class="mc-label">Role</span><span class="mc-val">UX/UI Designer · Cut Scene Animator &amp; Director</span></div>
     <div class="meta-cell"><span class="mc-label">Tools</span><span class="mc-val">After Effects · Photoshop · Unity · ElevenLabs</span></div>
-    <div class="meta-cell"><span class="mc-label">Outcome</span><span class="mc-val">1st Place — TAU Game Jam 2025</span></div>
+    <div class="meta-cell"><span class="mc-label">Outcome</span><span class="mc-val">1st Place - TAU Game Jam 2025</span></div>
   </div>
 
   <div class="proj-cover">
@@ -939,7 +1016,7 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">UX &amp; Interface Design</div>
-        <p class="sd">Designed all UI flows and interface elements — main menu, HUD, and disguise mechanic. Visual language needed to feel playful and immediate while keeping controls intuitive under pressure.</p>
+        <p class="sd">Designed all UI flows and interface elements - main menu, HUD, and disguise mechanic. Visual language needed to feel playful and immediate while keeping controls intuitive under pressure.</p>
       </div>
     </div>
     <div class="step">
@@ -953,7 +1030,7 @@
       <div class="sn"><span>03</span></div>
       <div class="sb">
         <div class="st">Cut Scene Direction &amp; Animation</div>
-        <p class="sd">Directed, storyboarded, and animated two original cut scenes in After Effects — establishing the world, characters, and tone.</p>
+        <p class="sd">Directed, storyboarded, and animated two original cut scenes in After Effects - establishing the world, characters, and tone.</p>
       </div>
     </div>
   </div>
@@ -963,14 +1040,14 @@
     <img src="interactive/ganggang/ganggangUXdesign.png" alt="GANGANG UX Design Breakdown" onclick="openLightbox(this)" loading="lazy" />
   </div>
 
-  <p class="sh">Cut Scene — Scene 1</p>
+  <p class="sh">Cut Scene - Scene 1</p>
   <div class="vid-wrap">
     <video controls preload="none" poster="interactive/ganggangpreview.png">
       <source src="interactive/ganggang/cutscene1.mp4" type="video/mp4" />
     </video>
   </div>
 
-  <p class="sh">Cut Scene — Scene 2</p>
+  <p class="sh">Cut Scene - Scene 2</p>
   <div class="vid-wrap" style="margin-bottom:32px;">
     <video controls preload="none">
       <source src="interactive/ganggang/cutscene2.mp4" type="video/mp4" />
@@ -1027,14 +1104,14 @@
       <div class="sn"><span>03</span></div>
       <div class="sb">
         <div class="st">Visual Design</div>
-        <p class="sd">Developed a visual language echoing Polly Pocket toy houses — purple and pink tones, smooth textures reflecting the accumulation of time and memory.</p>
+        <p class="sd">Developed a visual language echoing Polly Pocket toy houses - purple and pink tones, smooth textures reflecting the accumulation of time and memory.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>04</span></div>
       <div class="sb">
         <div class="st">Development &amp; Launch</div>
-        <p class="sd">Built and deployed on Wix with custom CSS and interactive layers. Publicly accessible — making this piece of broadcast history available to all.</p>
+        <p class="sd">Built and deployed on Wix with custom CSS and interactive layers. Publicly accessible - making this piece of broadcast history available to all.</p>
       </div>
     </div>
   </div>
@@ -1080,7 +1157,7 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">Narrative Scripting &amp; Branching Logic</div>
-        <p class="sd">Wrote the full branching narrative in Python/RenPy with multiple story paths where choices carry real consequences — compounding the curse or offering momentary relief.</p>
+        <p class="sd">Wrote the full branching narrative in Python/RenPy with multiple story paths where choices carry real consequences - compounding the curse or offering momentary relief.</p>
       </div>
     </div>
     <div class="step">
@@ -1135,14 +1212,14 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">User Research &amp; Problem Definition</div>
-        <p class="sd">Identified key pain points: overwhelm at purchase, inconsistent reminders, and fear of failure. Beginners need guidance specific to their plant, space, and experience — not generic tips.</p>
+        <p class="sd">Identified key pain points: overwhelm at purchase, inconsistent reminders, and fear of failure. Beginners need guidance specific to their plant, space, and experience - not generic tips.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>02</span></div>
       <div class="sb">
         <div class="st">Information Architecture &amp; Onboarding</div>
-        <p class="sd">Organised plant categories, care guides, schedules, and progress tracking into a low-friction hierarchy. Onboarding profiles the user's environment — light, space, experience — before surfacing any recommendations.</p>
+        <p class="sd">Organised plant categories, care guides, schedules, and progress tracking into a low-friction hierarchy. Onboarding profiles the user's environment - light, space, experience - before surfacing any recommendations.</p>
       </div>
     </div>
     <div class="step">
@@ -1178,7 +1255,7 @@
     <div class="meta-cell"><span class="mc-label">Type</span><span class="mc-val">Browser Game · TAU Gamification Course</span></div>
   </div>
 
-  <p class="proj-overview">A browser game built from scratch for a TAU gamification course. Dorothy inverts the typical action-game win condition — the player must guide the character with sensitivity and care, not aggression.</p>
+  <p class="proj-overview">A browser game built from scratch for a TAU gamification course. Dorothy inverts the typical action-game win condition - the player must guide the character with sensitivity and care, not aggression.</p>
 
   <p class="proc-label">Process</p>
   <div class="steps">
@@ -1193,14 +1270,14 @@
       <div class="sn"><span>02</span></div>
       <div class="sb">
         <div class="st">Design</div>
-        <p class="sd">Designed all visual assets with a deliberately soft, warm aesthetic — colour, typography, and character design all reinforcing care over conflict.</p>
+        <p class="sd">Designed all visual assets with a deliberately soft, warm aesthetic - colour, typography, and character design all reinforcing care over conflict.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>03</span></div>
       <div class="sb">
         <div class="st">Development</div>
-        <p class="sd">Built the complete game in vanilla HTML, CSS, and JavaScript — no frameworks. Every mechanic was intentional, suited to a project where mechanics do philosophical work.</p>
+        <p class="sd">Built the complete game in vanilla HTML, CSS, and JavaScript - no frameworks. Every mechanic was intentional, suited to a project where mechanics do philosophical work.</p>
       </div>
     </div>
   </div>
@@ -1279,7 +1356,7 @@
       <div class="sn"><span>03</span></div>
       <div class="sb">
         <div class="st">Email Marketing System</div>
-        <p class="sd">Designed a full email marketing system — newsletter layouts, promotional sequences, and announcement templates — built for reuse and easy adaptation as campaign volume scaled.</p>
+        <p class="sd">Designed a full email marketing system - newsletter layouts, promotional sequences, and announcement templates - built for reuse and easy adaptation as campaign volume scaled.</p>
       </div>
     </div>
     <div class="step">
@@ -1302,7 +1379,7 @@
     <img src="design/englishcoach/DESIGN-EMAILMARKETING.png" alt="Email Marketing Design" onclick="openLightbox(this)" loading="lazy" />
   </div>
 
-  <p class="sh">Campaign Designs — EC × Poalim &amp; EC × Shenkar</p>
+  <p class="sh">Campaign Designs - EC × Poalim &amp; EC × Shenkar</p>
   <div class="col2">
     <div class="img-block"><img src="design/englishcoach/DESIGN-ECXPOALIM.png" alt="English Coach × Poalim" onclick="openLightbox(this)" loading="lazy" /></div>
     <div class="img-block"><img src="design/englishcoach/DESIGN-ECXSHENKAR.png" alt="English Coach × Shenkar" onclick="openLightbox(this)" loading="lazy" /></div>
@@ -1330,7 +1407,7 @@
     <div class="logo-pill">
       <img src="design/jhmedical/logojhmedical.png" alt="JHMedical logo" loading="lazy" />
     </div>
-    <p class="proj-overview" style="margin-bottom:0;">Led design and marketing for JH Medical from the ground up — website, LinkedIn, infographics, marketing animations, business cards, and Hebrew-to-English translation for international audiences.</p>
+    <p class="proj-overview" style="margin-bottom:0;">Led design and marketing for JH Medical from the ground up - website, LinkedIn, infographics, marketing animations, business cards, and Hebrew-to-English translation for international audiences.</p>
   </div>
 
   <p class="proc-label">Process</p>
@@ -1339,21 +1416,21 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">Brand Identity &amp; Visual System</div>
-        <p class="sd">Developed the full visual identity — logo, colour palette, typographic standards — communicating precision and credibility to a specialist B2B medical audience.</p>
+        <p class="sd">Developed the full visual identity - logo, colour palette, typographic standards - communicating precision and credibility to a specialist B2B medical audience.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>02</span></div>
       <div class="sb">
         <div class="st">Website Design &amp; Build</div>
-        <p class="sd">Designed and built JHMedical's website from scratch — clean information hierarchy, professional assets, and navigation structured for a B2B medical context.</p>
+        <p class="sd">Designed and built JHMedical's website from scratch - clean information hierarchy, professional assets, and navigation structured for a B2B medical context.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>03</span></div>
       <div class="sb">
         <div class="st">LinkedIn Strategy &amp; Content Production</div>
-        <p class="sd">Developed a LinkedIn content strategy with consistent post visuals, infographic cards, and announcements — building the company's social media presence from zero.</p>
+        <p class="sd">Developed a LinkedIn content strategy with consistent post visuals, infographic cards, and announcements - building the company's social media presence from zero.</p>
       </div>
     </div>
     <div class="step">
@@ -1367,7 +1444,7 @@
       <div class="sn"><span>05</span></div>
       <div class="sb">
         <div class="st">Translation &amp; International Communication</div>
-        <p class="sd">Translated all medical and marketing content from Hebrew to English — website copy, LinkedIn posts, infographics, and printed materials for international medical partners.</p>
+        <p class="sd">Translated all medical and marketing content from Hebrew to English - website copy, LinkedIn posts, infographics, and printed materials for international medical partners.</p>
       </div>
     </div>
   </div>
@@ -1377,7 +1454,7 @@
     <img src="design/jhmedical/linkedinjhmedical.png" alt="JHMedical LinkedIn" onclick="openLightbox(this)" loading="lazy" />
   </div>
 
-  <p class="sh">Website — Laptop &amp; Mobile</p>
+  <p class="sh">Website - Laptop &amp; Mobile</p>
   <div class="img-block">
     <img src="design/jhmedical/jhmeddicalwebdesign-iphoneandlaptopscreen.png" alt="JHMedical Website" onclick="openLightbox(this)" loading="lazy" />
   </div>
@@ -1411,9 +1488,9 @@
   <div class="proj-eyebrow"><span class="proj-num">03</span></div>
   <h2 class="proj-title"><em>Logo</em> Design</h2>
 
-  <p class="proj-overview">Logo design and brand identity — from original mark creation to full rebranding. Each project begins with understanding the business's core identity: what it does, who it serves, and how it should feel on first contact.</p>
+  <p class="proj-overview">Logo design and brand identity - from original mark creation to full rebranding. Each project begins with understanding the business's core identity: what it does, who it serves, and how it should feel on first contact.</p>
 
-  <p class="proc-label">Didit Camera — AI-Driven Surveillance System</p>
+  <p class="proc-label">Didit Camera - AI-Driven Surveillance System</p>
   <p style="font-size:.82rem;font-weight:300;line-height:1.8;color:var(--mid);max-width:660px;margin-bottom:24px;">Logo for an AI-Driven Surveillance System. The mark needed to feel watchful and intelligent without becoming threatening.</p>
 
   <div class="steps" style="margin-bottom:28px;">
@@ -1421,14 +1498,14 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">Brief &amp; Concept Development</div>
-        <p class="sd">Defined brand attributes — surveillance precision, AI intelligence, constant presence — and explored visual directions: eye forms, aperture references, data motifs. Each evaluated at small sizes and across contexts.</p>
+        <p class="sd">Defined brand attributes - surveillance precision, AI intelligence, constant presence - and explored visual directions: eye forms, aperture references, data motifs. Each evaluated at small sizes and across contexts.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>02</span></div>
       <div class="sb">
         <div class="st">Refinement &amp; Finalisation</div>
-        <p class="sd">Refined the strongest concept through multiple rounds — adjusting proportions, weight, and colour until complete. Tested across backgrounds and scales before delivery.</p>
+        <p class="sd">Refined the strongest concept through multiple rounds - adjusting proportions, weight, and colour until complete. Tested across backgrounds and scales before delivery.</p>
       </div>
     </div>
   </div>
@@ -1436,7 +1513,7 @@
   <div style="background:var(--pill);border-radius:8px;padding:44px;display:flex;align-items:center;justify-content:center;margin-bottom:8px;max-width:400px;">
     <img src="design/logosection/didit/dititlogo.png" alt="Didit Camera logo" onclick="openLightbox(this)" style="max-width:180px;max-height:120px;object-fit:contain;display:block;cursor:none;" loading="lazy" />
   </div>
-  <p class="img-cap">Didit Camera — final mark</p>
+  <p class="img-cap">Didit Camera - final mark</p>
 
   <p class="sh">Process</p>
   <div class="col2">
@@ -1445,15 +1522,15 @@
   </div>
 
   <div style="margin-top:48px;padding-top:44px;border-top:1px solid var(--line);">
-    <p class="proc-label">Re-Design Project — Local Business Rebranding</p>
-    <p style="font-size:.82rem;font-weight:300;line-height:1.8;color:var(--mid);max-width:660px;margin-bottom:24px;">For hands-on experience, I identified local businesses whose logos I could challenge and improve — honouring existing equity while elevating visual presence.</p>
+    <p class="proc-label">Re-Design Project - Local Business Rebranding</p>
+    <p style="font-size:.82rem;font-weight:300;line-height:1.8;color:var(--mid);max-width:660px;margin-bottom:24px;">For hands-on experience, I identified local businesses whose logos I could challenge and improve - honouring existing equity while elevating visual presence.</p>
 
     <div class="steps" style="margin-bottom:28px;">
       <div class="step">
         <div class="sn"><span>01</span></div>
         <div class="sb">
           <div class="st">Audit &amp; Positioning</div>
-          <p class="sd">Studied each business — signage, materials, online presence — identifying the gap between current visual identity and actual quality and positioning.</p>
+          <p class="sd">Studied each business - signage, materials, online presence - identifying the gap between current visual identity and actual quality and positioning.</p>
         </div>
       </div>
       <div class="step">
@@ -1479,7 +1556,7 @@
   <div class="proj-eyebrow"><span class="proj-num">04</span></div>
   <h2 class="proj-title">Print &amp; <em>Infographics</em></h2>
 
-  <p class="proj-overview">Print design spanning brochures and infographic publications — translating complex information into coherent layouts where every design decision is permanent.</p>
+  <p class="proj-overview">Print design spanning brochures and infographic publications - translating complex information into coherent layouts where every design decision is permanent.</p>
 
   <p class="proc-label">Approach</p>
   <div class="steps" style="margin-bottom:36px;">
@@ -1487,21 +1564,21 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">Content Architecture</div>
-        <p class="sd">Mapped the information hierarchy before any visual design — what the reader needs first, second, and in what depth. Every layer placed in the correct order before the grid was built.</p>
+        <p class="sd">Mapped the information hierarchy before any visual design - what the reader needs first, second, and in what depth. Every layer placed in the correct order before the grid was built.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>02</span></div>
       <div class="sb">
         <div class="st">Grid &amp; Typography</div>
-        <p class="sd">Established a precise grid system for each piece, selecting typefaces for print rendering specifically — what reads well on screen often requires adjustment for paper and ink.</p>
+        <p class="sd">Established a precise grid system for each piece, selecting typefaces for print rendering specifically - what reads well on screen often requires adjustment for paper and ink.</p>
       </div>
     </div>
     <div class="step">
       <div class="sn"><span>03</span></div>
       <div class="sb">
         <div class="st">Print Preparation</div>
-        <p class="sd">Prepared all files for professional print — bleed, crop marks, CMYK colour profiles, embedded fonts, and resolution — ensuring screen designs printed faithfully.</p>
+        <p class="sd">Prepared all files for professional print - bleed, crop marks, CMYK colour profiles, embedded fonts, and resolution - ensuring screen designs printed faithfully.</p>
       </div>
     </div>
   </div>
@@ -1526,7 +1603,7 @@
   <div class="proj-eyebrow"><span class="proj-num">05</span></div>
   <h2 class="proj-title"><em>Poster</em> Design</h2>
 
-  <p class="proj-overview">Poster design for film and festival contexts — distilling a complete story into a single arresting visual moment. Composition, typographic hierarchy, and negative space all used toward that singular goal.</p>
+  <p class="proj-overview">Poster design for film and festival contexts - distilling a complete story into a single arresting visual moment. Composition, typographic hierarchy, and negative space all used toward that singular goal.</p>
 
   <p class="proc-label">Approach</p>
   <div class="steps" style="margin-bottom:36px;">
@@ -1534,7 +1611,7 @@
       <div class="sn"><span>01</span></div>
       <div class="sb">
         <div class="st">Film / Event Research &amp; Concept</div>
-        <p class="sd">Closely studied each film or event — genre, tone, characters, central conflict — identifying the single image or tension the entire work orbits around.</p>
+        <p class="sd">Closely studied each film or event - genre, tone, characters, central conflict - identifying the single image or tension the entire work orbits around.</p>
       </div>
     </div>
     <div class="step">
@@ -1553,7 +1630,7 @@
     </div>
   </div>
 
-  <p class="sh">Movie Posters — Fire Island · Fraud · Kissing Jessica Stein</p>
+  <p class="sh">Movie Posters - Fire Island · Fraud · Kissing Jessica Stein</p>
   <div class="img-block wide">
     <img src="design/posterssection/3MOVIEPOSTERS-FIREISLAND-FRAUD-KISSINGJESSICASTEIN.png" alt="Movie Posters" onclick="openLightbox(this)" loading="lazy" />
   </div>
@@ -1582,7 +1659,7 @@
     <div class="logo-pill">
       <img src="design/tlvuniversity/telavivunilogo.png" alt="Tel Aviv University" loading="lazy" />
     </div>
-    <p class="proj-overview" style="margin-bottom:0;">Print design for Tel Aviv University — a brochure for the ANU Museum of the Jewish People and a large-format infographic stand for the university's LGBTQ Centre.</p>
+    <p class="proj-overview" style="margin-bottom:0;">Print design for Tel Aviv University - a brochure for the ANU Museum of the Jewish People and a large-format infographic stand for the university's LGBTQ Centre.</p>
   </div>
 
   <p class="sh">ANU Museum Brochure</p>
@@ -1590,7 +1667,7 @@
     <img src="design/tlvuniversity/brochureANUMUSEUM.png" alt="ANU Museum Brochure" onclick="openLightbox(this)" loading="lazy" />
   </div>
 
-  <p class="sh">LGBTQ Centre — Infographic Stand</p>
+  <p class="sh">LGBTQ Centre - Infographic Stand</p>
   <div class="img-block">
     <img src="design/tlvuniversity/TLVINFOGRAPHICSTANDS.png" alt="Tel Aviv LGBTQ Centre Infographic Stand" onclick="openLightbox(this)" loading="lazy" />
   </div>
@@ -1611,7 +1688,7 @@
   </div>
 </div>
 
-<!-- UP THERE — big feature -->
+<!-- UP THERE - big feature -->
 <div class="vid-feature reveal" id="vid-upthere">
   <div class="vf-meta">
     <span class="vf-title">Up There</span>
@@ -1624,7 +1701,7 @@
   </div>
 </div>
 
-<!-- BIGGER — big feature -->
+<!-- BIGGER - big feature -->
 <div class="vid-feature reveal" id="vid-bigger">
   <div class="vf-meta">
     <span class="vf-title">Bigger</span>
@@ -1668,7 +1745,7 @@
 </div>
 
 <div class="sec" style="padding-top:0;padding-bottom:72px;">
-  <p class="writing-intro reveal">A collection of seminars, research projects, and academic papers — exploring film, media representation, and cultural theory.</p>
+  <p class="writing-intro reveal">A collection of seminars, research projects, and academic papers - exploring film, media representation, and cultural theory.</p>
   <div>
     <a class="w-row reveal" href="writing/Glorification and Exclusion in the Housewives of Modern Family.pdf" target="_blank" rel="noopener">
       <span class="w-n">01</span><span class="w-t">Glorification and Exclusion in the Housewives of Modern Family</span><span class="w-a">↗</span>
@@ -1759,12 +1836,12 @@
 
   // Page titles & meta descriptions for SPA routing
   const PAGE_META = {
-    home:        { title: 'Omer Policker — Digital Media Designer & Creative Technologist | Tel Aviv', desc: 'Portfolio of Omer Policker — Digital Media Designer & Creative Technologist based in Tel Aviv. Games, interactive documentaries, brand identity, video, and UX/UI design.' },
-    interactive: { title: 'Interactive Work — Omer Policker', desc: 'Games, interactive documentaries, browser experiences, and UX prototypes by Omer Policker.' },
-    design:      { title: 'Design — Omer Policker', desc: 'Brand identity, marketing strategy, print design, posters, and client campaigns by Omer Policker.' },
-    video:       { title: 'Video — Omer Policker', desc: 'Animation, special effects, motion design, and short films by Omer Policker.' },
-    writing:     { title: 'Writing — Omer Policker', desc: 'Academic papers and critical research on film, gender, and media representation by Omer Policker.' },
-    contact:     { title: 'Contact Omer Policker — Digital Media Designer', desc: 'Get in touch with Omer Policker — available for roles in digital media, UX/UI, marketing, and creative development.' }
+    home:        { title: 'Omer Policker - Digital Media Designer & Creative Technologist | Tel Aviv', desc: 'Portfolio of Omer Policker - Digital Media Designer & Creative Technologist based in Tel Aviv. Games, interactive documentaries, brand identity, video, and UX/UI design.' },
+    interactive: { title: 'Interactive Work - Omer Policker', desc: 'Games, interactive documentaries, browser experiences, and UX prototypes by Omer Policker.' },
+    design:      { title: 'Design - Omer Policker', desc: 'Brand identity, marketing strategy, print design, posters, and client campaigns by Omer Policker.' },
+    video:       { title: 'Video - Omer Policker', desc: 'Animation, special effects, motion design, and short films by Omer Policker.' },
+    writing:     { title: 'Writing - Omer Policker', desc: 'Academic papers and critical research on film, gender, and media representation by Omer Policker.' },
+    contact:     { title: 'Contact Omer Policker - Digital Media Designer', desc: 'Get in touch with Omer Policker - available for roles in digital media, UX/UI, marketing, and creative development.' }
   };
 
   function switchPage(pageId, anchor) {
